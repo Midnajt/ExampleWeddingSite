@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { images } from "@/config/assets";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
+import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 
@@ -27,23 +28,24 @@ export function Gallery() {
           title={t("gallery.title")}
           subtitle={t("gallery.subtitle")}
         />
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+        <Stagger className="grid grid-cols-2 gap-3 md:grid-cols-5" stagger={0.08} delay={0.1}>
           {items.map((item, i) => (
-            <button
-              key={`${item.src}-${i}`}
-              type="button"
-              className="group overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
-              onClick={() => setIndex(i)}
-            >
-              <img
-                src={item.src}
-                alt={t(item.altKey)}
-                className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:h-44"
-                loading="lazy"
-              />
-            </button>
+            <StaggerItem key={`${item.src}-${i}`} scale>
+              <button
+                type="button"
+                className="group overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
+                onClick={() => setIndex(i)}
+              >
+                <img
+                  src={item.src}
+                  alt={t(item.altKey)}
+                  className="ease-smooth h-40 w-full object-cover transition-transform duration-500 group-hover:scale-[1.06] md:h-44"
+                  loading="lazy"
+                />
+              </button>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </Container>
       <Dialog open={index !== null} onOpenChange={(open) => !open && setIndex(null)}>
         <DialogContent className="bg-background p-2 sm:max-w-5xl">

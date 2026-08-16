@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
+import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 
 const KEYS = ["gather", "mass", "exit", "welcome", "dinner", "dance", "oczepiny", "end"] as const;
 
@@ -14,9 +15,9 @@ export function DayTimeline() {
           title={t("schedule.title")}
           subtitle={t("schedule.subtitle")}
         />
-        <ol className="mx-auto max-w-2xl">
+        <Stagger as="ol" className="mx-auto max-w-2xl" stagger={0.12}>
           {KEYS.map((key) => (
-            <li key={key} className="grid grid-cols-[5.5rem_1fr] gap-4 sm:grid-cols-[6.5rem_1fr]">
+            <StaggerItem key={key} as="li" className="grid grid-cols-[5.5rem_1fr] gap-4 sm:grid-cols-[6.5rem_1fr]">
               <p className="font-heading text-primary pt-1 text-xl font-semibold">
                 {t(`schedule.items.${key}.time`)}
               </p>
@@ -24,9 +25,9 @@ export function DayTimeline() {
                 <p className="font-heading text-lg">{t(`schedule.items.${key}.title`)}</p>
                 <p className="text-muted-foreground mt-1 text-sm">{t(`schedule.items.${key}.text`)}</p>
               </div>
-            </li>
+            </StaggerItem>
           ))}
-        </ol>
+        </Stagger>
       </Container>
     </Section>
   );

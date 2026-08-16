@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Baby, Bus, Car, Moon, Shirt } from "lucide-react";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
+import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ITEMS = [
@@ -22,19 +23,21 @@ export function LogisticsGrid() {
           title={t("logistics.title")}
           subtitle={t("logistics.subtitle")}
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {ITEMS.map(({ key, icon: Icon }) => (
-            <Card key={key}>
-              <CardHeader>
-                <Icon className="text-primary size-5" />
-                <CardTitle>{t(`logistics.${key}.title`)}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground text-sm">{t(`logistics.${key}.text`)}</p>
-              </CardContent>
-            </Card>
+            <StaggerItem key={key} hover>
+              <Card className="h-full">
+                <CardHeader>
+                  <Icon className="text-primary size-5" />
+                  <CardTitle>{t(`logistics.${key}.title`)}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground text-sm">{t(`logistics.${key}.text`)}</p>
+                </CardContent>
+              </Card>
+            </StaggerItem>
           ))}
-        </div>
+        </Stagger>
       </Container>
     </Section>
   );

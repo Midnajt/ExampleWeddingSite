@@ -37,8 +37,9 @@ export const site = {
     city: "Piwniczna-Zdrój",
     full: "ul. Krakowska 6, 33-350 Piwniczna-Zdrój",
     mapEmbed:
-      "https://www.openstreetmap.org/export/embed.html?bbox=20.7061%2C49.4328%2C20.7261%2C49.4488&layer=mapnik&marker=49.4408%2C20.7161",
-    mapLink: "https://www.openstreetmap.org/?mlat=49.4408&mlon=20.7161#map=16/49.4408/20.7161",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.28217815426063!2d20.715344806996143!3d49.440924486859124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e0b0039dd08df%3A0x86df6d421f00e482!2sKo%C5%9Bci%C3%B3%C5%82%20pw.%20Narodzenia%20Naj%C5%9Bwietszej%20Marii%20Panny!5e0!3m2!1spl!2spl!4v1786894118643!5m2!1spl!2spl",
+    mapLink:
+      "https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+pw.+Narodzenia+Naj%C5%9Bwietszej+Marii+Panny/@49.4409245,20.7153448,17z",
   },
   reception: {
     namePl: "Rezydencja Las Vegas",
@@ -49,8 +50,9 @@ export const site = {
     city: "Barcice",
     full: "Barcice 550, 33-342 Barcice",
     mapEmbed:
-      "https://www.openstreetmap.org/export/embed.html?bbox=20.6290%2C49.4580%2C20.6510%2C49.4780&layer=mapnik&marker=49.4680%2C20.6400",
-    mapLink: "https://www.openstreetmap.org/?mlat=49.4680&mlon=20.6400#map=16/49.4680/20.6400",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4699.215960255234!2d20.65486946848505!3d49.52735932243198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473de2e5bbce2627%3A0x40a9266d0934df62!2sRezydencja%20Las%20Vegas%20-%20Sala%20weselna%2C%20Hotel%20%2C%20SPA!5e0!3m2!1spl!2spl!4v1786894070247!5m2!1spl!2spl",
+    mapLink:
+      "https://www.google.com/maps/place/Rezydencja+Las+Vegas+-+Sala+weselna,+Hotel+,+SPA/@49.5273593,20.6548695,17z",
   },
   witnesses: [
     {
