@@ -15,7 +15,7 @@ export function LegalLayout({
   return (
     <main id="content" className="py-16">
       <Container className="max-w-3xl">
-        <p className="bg-accent/15 text-accent-foreground mb-6 rounded-md px-3 py-2 text-sm">
+        <p className="bg-secondary text-secondary-foreground mb-6 rounded-md px-3 py-2 text-sm">
           {t("legal.disclaimer")}
         </p>
         <h1 className="text-4xl">{title}</h1>
@@ -26,7 +26,7 @@ export function LegalLayout({
           </a>
         </p>
         <p className="text-muted-foreground mt-6 text-xs">
-          {site.legalName} · {site.address.full} · {site.email}
+          {site.legalName} · {site.email}
         </p>
       </Container>
     </main>
@@ -38,18 +38,21 @@ export function RodoPage() {
   return (
     <LegalLayout title={t("legal.rodoTitle")}>
       <p>
-        Administratorem danych osobowych jest {site.legalName}, {site.address.full}, e-mail:{" "}
-        {site.email}, tel. {site.phone}.
+        Administratorem danych osobowych na tej stronie demonstracyjnej jest {site.legalName},
+        e-mail: {site.email}, tel. {site.phone}. Dane kontaktowe pary i świadków są fikcyjne i służą
+        prezentacji układu strony.
       </p>
       <p>
-        Dane przetwarzamy w celu odpowiedzi na zapytania, umówienia wizyty oraz — po wyrażeniu
-        zgody — w celach analitycznych (pliki cookies). Podstawą jest art. 6 ust. 1 lit. a, b lub f
-        RODO.
+        Jeśli gość wypełni formularz potwierdzenia obecności, zgłoszenie zapisuje się wyłącznie w localStorage
+        przeglądarki (imię, obecność, dieta, dzieci, bus, nocleg, uwaga). Nie wysyłamy danych na
+        serwer. Podstawą jest zgoda (art. 6 ust. 1 lit. a RODO) oraz uzasadniony interes pokazania
+        działania modułu (lit. f) w ramach demo.
       </p>
       <p>
-        Dane nie są sprzedawane. Mogą być powierzane dostawcom hostingu i poczty. Przysługuje
+        Dane nie są sprzedawane. Hosting (GitHub Pages) może przetwarzać logi techniczne. Przysługuje
         Państwu prawo dostępu, sprostowania, usunięcia, ograniczenia, przenoszenia, sprzeciwu oraz
-        skargi do Prezesa UODO.
+        skargi do Prezesa UODO. Zgłoszenie obecności można skasować, czyszcząc dane strony w przeglądarce
+        albo klikając „wyślij kolejne zgłoszenie”.
       </p>
       <p>
         Szczegóły znajdują się w{" "}
@@ -67,17 +70,17 @@ export function PrivacyPage() {
   return (
     <LegalLayout title={t("legal.privacyTitle")}>
       <p>
-        Strona {site.name} wykorzystuje niezbędne pliki cookies do zapamiętania zgody, języka,
-        wariantu graficznego i trybu jasnego/ciemnego. Nie ładujemy narzędzi analitycznych przed
-        akceptacją banera.
+        Strona {site.name} wykorzystuje niezbędne pliki cookies do zapamiętania zgody na baner oraz
+        wybranego języka (PL/EN). Nie ładujemy narzędzi analitycznych przed akceptacją banera. Tryb
+        ciemny jest wyłączony.
       </p>
       <p>
-        Dane podane telefonicznie lub e-mailem służą wyłącznie obsłudze zapytania. Nie prowadzimy
-        newslettera, dopóki nie zostanie to wyraźnie włączone w projekcie klienta.
+        Formularz potwierdzenia obecności nie wysyła danych pocztą ani API — kopia zostaje w przeglądarce gościa.
+        Wiadomości e-mail z księgi gości trafiają na adres demonstracyjny {site.email}.
       </p>
       <p>
-        Kontakt w sprawie danych: {site.email}. Treść tego dokumentu jest szablonem i wymaga
-        dostosowania do realnych procesów gabinetu / firmy.
+        Kontakt w sprawie danych: {site.email}. Ten dokument jest szablonem pod prezentację i wymaga
+        dostosowania, zanim strona zostanie opublikowana dla prawdziwej pary.
       </p>
     </LegalLayout>
   );

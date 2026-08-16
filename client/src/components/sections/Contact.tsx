@@ -1,83 +1,79 @@
 import { useTranslation } from "react-i18next";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { site } from "@/config/site";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
 
 export function Contact() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const people = [
+    { role: t("contact.bride"), ...site.contacts.bride },
+    { role: t("contact.groom"), ...site.contacts.groom },
+  ] as const;
 
   return (
-    <Section id="kontakt" className="bg-muted/40">
+    <Section id="kontakt">
       <Container>
         <SectionHeader
           kicker={t("contact.kicker")}
           title={t("contact.title")}
           subtitle={t("contact.subtitle")}
         />
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="space-y-6">
-            <p className="flex gap-3 text-sm">
-              <MapPin className="text-primary mt-0.5 size-5 shrink-0" />
-              <span>
-                <span className="font-medium">{t("contact.address")}</span>
-                <br />
-                {site.address.full}
-              </span>
-            </p>
-            <p className="flex gap-3 text-sm">
-              <Phone className="text-primary mt-0.5 size-5 shrink-0" />
-              <span>
-                <span className="font-medium">{t("contact.phone")}</span>
-                <br />
-                <a className="hover:underline" href={site.phoneHref}>
-                  {site.phone}
+        <div className="grid gap-6 md:grid-cols-2">
+          {people.map((person) => (
+            <div key={person.email} className="bg-card rounded-xl border p-6">
+              <p className="text-primary text-xs font-medium tracking-widest uppercase">
+                {person.role}
+              </p>
+              <p className="font-heading mt-2 text-2xl">{person.name}</p>
+              <p className="mt-4 flex items-center gap-2 text-sm">
+                <Phone className="text-primary size-4" />
+                <a className="hover:underline" href={person.phoneHref}>
+                  {person.phone}
                 </a>
-              </span>
-            </p>
-            <p className="flex gap-3 text-sm">
-              <Mail className="text-primary mt-0.5 size-5 shrink-0" />
-              <span>
-                <span className="font-medium">{t("contact.email")}</span>
-                <br />
-                <a className="hover:underline" href={site.emailHref}>
-                  {site.email}
+              </p>
+              <p className="mt-2 flex items-center gap-2 text-sm">
+                <Mail className="text-primary size-4" />
+                <a className="hover:underline" href={person.emailHref}>
+                  {person.email}
                 </a>
-              </span>
-            </p>
-            <div className="flex gap-3 text-sm">
-              <Clock className="text-primary mt-0.5 size-5 shrink-0" />
-              <div>
-                <p className="font-medium">{t("contact.hours")}</p>
-                <ul className="text-muted-foreground mt-1 space-y-1">
-                  {site.hours.map((row) => (
-                    <li key={row.daysPl}>
-                      {i18n.language === "en" ? row.daysEn : row.daysPl}:{" "}
-                      {row.hours === "nieczynne" ? t("contact.closed") : row.hours}
-                    </li>
-                  ))}
-                </ul>
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                <Button asChild size="sm">
+                  <a href={person.phoneHref}>{t("contact.phone")}</a>
+                </Button>
+                <Button asChild size="sm" variant="outline">
+                  <a href={person.emailHref}>{t("contact.email")}</a>
+                </Button>
               </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild>
-                <a href={site.phoneHref}>{t("hero.ctaCall")}</a>
-              </Button>
-              <Button asChild variant="outline">
-                <a href={site.emailHref}>{t("hero.ctaEmail")}</a>
-              </Button>
-            </div>
-          </div>
+          ))}
+        </div>
+        <div className="mt-10 grid gap-8 lg:grid-cols-2">
           <div>
-            <p className="mb-3 text-sm font-medium">{t("contact.map")}</p>
+            <p className="mb-3 text-sm font-medium">{t("contact.mapCeremony")}</p>
             <iframe
-              title={t("contact.map")}
-              src={site.mapEmbed}
-              className="h-72 w-full rounded-xl border md:h-80"
+              title={t("contact.mapCeremony")}
+              src={site.ceremony.mapEmbed}
+              className="h-64 w-full rounded-xl border md:h-72"
               loading="lazy"
             />
             <p className="mt-2 text-xs">
-              <a className="underline" href={site.mapLink} target="_blank" rel="noreferrer">
+              <a className="underline" href={site.ceremony.mapLink} target="_blank" rel="noreferrer">
+                OpenStreetMap
+              </a>
+            </p>
+          </div>
+          <div>
+            <p className="mb-3 text-sm font-medium">{t("contact.mapReception")}</p>
+            <iframe
+              title={t("contact.mapReception")}
+              src={site.reception.mapEmbed}
+              className="h-64 w-full rounded-xl border md:h-72"
+              loading="lazy"
+            />
+            <p className="mt-2 text-xs">
+              <a className="underline" href={site.reception.mapLink} target="_blank" rel="noreferrer">
                 OpenStreetMap
               </a>
             </p>

@@ -3,6 +3,7 @@ import { densityClass } from "@/config/theme";
 import { useTheme } from "@/lib/theme-provider";
 import { cn } from "@/lib/utils";
 import type { ReactNode } from "react";
+import { FloralDivider } from "@/components/layout/FloralDivider";
 
 type SectionProps = {
   id?: string;
@@ -16,10 +17,10 @@ export function Section({ id, className, children }: SectionProps) {
   return (
     <motion.section
       id={id}
-      className={cn(densityClass(preset.density), className)}
+      className={cn("bg-white", densityClass(preset.density), className)}
       initial={{ opacity: 0, y: 28 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0.12 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       {children}
@@ -45,20 +46,21 @@ export function SectionHeader({
   kicker,
   title,
   subtitle,
+  ornament = true,
 }: {
   kicker: string;
   title: string;
   subtitle?: string;
+  ornament?: boolean;
 }) {
   return (
-    <div className="mb-10 max-w-2xl">
-      <p className="text-sm font-medium tracking-widest text-primary uppercase">
-        {kicker}
-      </p>
+    <div className="mx-auto mb-10 max-w-2xl text-center">
+      <p className="text-sm font-medium tracking-widest text-primary uppercase">{kicker}</p>
       <h2 className="mt-2 text-3xl leading-tight md:text-4xl">{title}</h2>
       {subtitle ? (
         <p className="text-muted-foreground mt-3 text-base md:text-lg">{subtitle}</p>
       ) : null}
+      {ornament ? <FloralDivider className="mt-6" /> : null}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 # Mapa zdjęć — `example_photos/`
 
-Katalog przykładowych zdjęć ślubnych (para: panna młoda w koronkowym welonie / bolerku, pan młody łysy, z brodą i okularami). Służy do szybkiego dopasowania plików do slotów w `client/assets/ASSETS.md` i `client/src/config/assets.ts`.
+Katalog przykładowych materiałów: zdjęcia ślubne (para: panna młoda w koronkowym welonie / bolerku, pan młody łysy, z brodą i okularami) oraz grafika dekoracyjna. Służy do szybkiego dopasowania plików do slotów w `client/assets/ASSETS.md` i `client/src/config/assets.ts`.
 
 | Plik | Co jest na zdjęciu | Sugerowane miejsce |
 | --- | --- | --- |
@@ -14,6 +14,7 @@ Katalog przykładowych zdjęć ślubnych (para: panna młoda w koronkowym weloni
 | `5F4A8998.jpg` | Moment sakramentu przy ołtarzu: ksiądz w białoczerwonych szatach owija stułę wokół złączonych rąk pary. W tle ołtarz ze złotem i figurami, klęcznik z czerwoną tkaniną. | Galeria — ceremonia / ślub kościelny |
 | `5F4A9191.jpg` | Radosne wyjście z kościoła: para pod rękę w kamiennym portalu, panna młoda unosi bukiet, pan młody w ciemnozielonym krawacie i butonierce. Nad drzwiami witraż, w głębi złoty ołtarz. | Hero / slajder — wyjście z kościoła |
 | `5F4A9728.jpg` | Pierwszy taniec na sali: para w uścisku, wokół spadające białe konfetti w kształcie serc. Ona w sukni z dekoltem V, on w białej koszuli i zielonym krawacie. Jasna podłoga, okna w tle. | Slajder / galeria — wesele |
+| `watercolor-floral.png` | Pozioma akwarelowa kompozycja kwiatowa na białym tle: protea / stylizowany kwiat w beżu, miękka róża, gałązki w granacie i szaroniebieskim, drobne jagody w odcieniu ochry. Styl rustykalny / boho. | Ornament — separator, nagłówek sekcji, tło dekoracyjne (nie slot zdjęcia) |
 
 ## Sloty w aplikacji (przypomnienie)
 
@@ -25,3 +26,5 @@ Katalog przykładowych zdjęć ślubnych (para: panna młoda w koronkowym weloni
 | `gallery-1` … `gallery-4` | 4:3 | `5F4A8998.jpg`, `5F4A5888.jpg`, `5F4A8392.jpg`, `5F4A8617.jpg` |
 
 Zdjęcia zespołu (`team-1` … `team-3`) to portrety osób z oferty — te pliki ich nie pokrywają.
+
+`watercolor-floral.png` to ornament, nie zdjęcie pary — nie wrzucaj go w hero / about / slajder / galerię.

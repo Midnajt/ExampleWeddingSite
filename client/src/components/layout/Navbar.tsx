@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Menu, Moon, Sun } from "lucide-react";
+import { Menu } from "lucide-react";
 import { site } from "@/config/site";
-import { useTheme } from "@/lib/theme-provider";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -14,17 +13,17 @@ import {
 } from "@/components/ui/sheet";
 
 const LINKS = [
-  { href: "#oferta", key: "nav.services" },
-  { href: "#onas", key: "nav.about" },
-  { href: "#zespol", key: "nav.team" },
+  { href: "#slub", key: "nav.ceremony" },
+  { href: "#wesele", key: "nav.reception" },
+  { href: "#historia", key: "nav.story" },
+  { href: "#plan", key: "nav.schedule" },
   { href: "#galeria", key: "nav.gallery" },
-  { href: "#cennik", key: "nav.pricing" },
+  { href: "#faq", key: "nav.faq" },
   { href: "#kontakt", key: "nav.contact" },
 ] as const;
 
 export function Navbar() {
   const { t, i18n } = useTranslation();
-  const { mode, toggleMode } = useTheme();
   const [open, setOpen] = useState(false);
 
   const toggleLang = () => {
@@ -35,9 +34,9 @@ export function Navbar() {
     <header className="bg-background/90 border-b backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <a href="#top" className="font-heading text-lg font-semibold tracking-tight">
-          {site.name}
+          {site.couple.initials}
         </a>
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Główne">
+        <nav className="hidden items-center gap-5 xl:flex" aria-label="Główne">
           {LINKS.map((link) => (
             <a
               key={link.href}
@@ -49,28 +48,15 @@ export function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-1">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={toggleLang}
-            aria-label={t("theme.lang")}
-          >
+          <Button variant="ghost" size="sm" onClick={toggleLang} aria-label={t("theme.lang")}>
             {i18n.language === "pl" ? "EN" : "PL"}
           </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleMode}
-            aria-label={mode === "dark" ? t("theme.light") : t("theme.dark")}
-          >
-            {mode === "dark" ? <Sun /> : <Moon />}
-          </Button>
           <Button asChild size="sm" className="hidden sm:inline-flex">
-            <a href={site.phoneHref}>{t("hero.ctaCall")}</a>
+            <a href="#rsvp">{t("nav.rsvp")}</a>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="lg:hidden" aria-label={t("nav.menu")}>
+              <Button variant="outline" size="icon" className="xl:hidden" aria-label={t("nav.menu")}>
                 <Menu />
               </Button>
             </SheetTrigger>
@@ -86,6 +72,11 @@ export function Navbar() {
                     </a>
                   </SheetClose>
                 ))}
+                <SheetClose asChild>
+                  <a href="#rsvp" className="hover:bg-accent rounded-md px-2 py-3 text-base">
+                    {t("nav.rsvp")}
+                  </a>
+                </SheetClose>
               </nav>
             </SheetContent>
           </Sheet>

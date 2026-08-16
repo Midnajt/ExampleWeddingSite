@@ -1,132 +1,221 @@
 {
   "nav": {
     "home": "Strona główna",
-    "services": "Oferta",
-    "about": "O nas",
-    "team": "Zespół",
+    "ceremony": "Ślub",
+    "reception": "Wesele",
+    "story": "Historia",
+    "schedule": "Plan dnia",
     "gallery": "Galeria",
-    "pricing": "Cennik",
+    "faq": "FAQ",
     "contact": "Kontakt",
+    "rsvp": "Potwierdź obecność",
     "menu": "Menu",
     "close": "Zamknij"
   },
   "hero": {
-    "kicker": "Wizytówka dla lokalnego biznesu",
-    "title": "Dbamy o detale, żebyś Ty mógł skupić się na kliencie",
-    "subtitle": "Kompleksowe usługi w Warszawie — umów termin telefonem lub napisz e-mail. Bez formularzy, bez czekania na odpowiedź bota.",
-    "ctaCall": "Zadzwoń",
-    "ctaEmail": "Napisz e-mail",
-    "scroll": "Zobacz ofertę"
+    "kicker": "28 września 2024",
+    "title": "Dorota & Marcin",
+    "subtitle": "Dziękujemy, że byliście z nami — msza w Piwnicznej-Zdroju, wesele w Barcicach.",
+    "ctaGallery": "Zobacz zdjęcia",
+    "ctaRsvp": "Potwierdź obecność"
+  },
+  "events": {
+    "kicker": "Gdzie i kiedy",
+    "title": "Ślub i wesele",
+    "subtitle": "Dwie lokalizacje w dolinie Popradu — najpierw kościół, potem sala.",
+    "ceremony": "Ślub",
+    "reception": "Wesele",
+    "time": "Godzina",
+    "address": "Adres",
+    "map": "Otwórz mapę"
+  },
+  "countdown": {
+    "kicker": "Odliczanie",
+    "title": "Wesele za nami",
+    "daysAgo": "Minęło {{count}} dni od naszego ślubu.",
+    "dateLabel": "28 września 2024"
+  },
+  "story": {
+    "kicker": "Nasza historia",
+    "title": "Jak to się zaczęło",
+    "p1": "Poznaliśmy się zwyczajnie — rozmowa, która miała trwać chwilę, a skończyła się spacerem wzdłuż Popradu. Od tamtej pory Barcice i Piwniczna są naszym wspólnym krajobrazem.",
+    "p2": "Zaręczyny przyszły bez wielkiej sceny: obrączki, data na zegarku i decyzja, że 28 września 2024 będzie naszym dniem. Dziękujemy, że świętowaliście go razem z nami."
   },
   "slider": {
-    "title": "Klimat miejsca",
-    "subtitle": "Przykładowe kadry — podmień pliki w client/assets."
+    "title": "Najlepsze wspólne chwile",
+    "subtitle": "Ceremonia, wyjście z kościoła i pierwszy taniec."
   },
-  "services": {
-    "kicker": "Oferta",
-    "title": "Zakres usług",
-    "subtitle": "Dobierz pakiet do potrzeb — od jednorazowej realizacji po stałą współpracę.",
+  "schedule": {
+    "kicker": "Harmonogram",
+    "title": "Plan dnia",
+    "subtitle": "Godziny poglądowe — tak wyglądał nasz dzień.",
     "items": {
-      "consult": {
-        "title": "Konsultacja",
-        "text": "Rozmowa o celu, budżecie i terminie. Jasny plan działania jeszcze przed startem."
-      },
-      "design": {
-        "title": "Projekt",
-        "text": "Spójna identyfikacja i układ treści, który da się łatwo zaktualizować przy kolejnym kliencie."
-      },
-      "delivery": {
-        "title": "Realizacja",
-        "text": "Gotowe pliki do wrzucenia na FTP. Działająca strona bez serwera i bazy danych."
-      },
-      "care": {
-        "title": "Opieka",
-        "text": "Drobne zmiany treści, sezonowe banery i aktualizacja cennika na żądanie."
-      }
+      "gather": { "time": "13:30", "title": "Zbiórka przy kościele", "text": "Goście zbierają się przy kościele w Piwnicznej-Zdroju." },
+      "mass": { "time": "14:00", "title": "Msza święta i sakrament", "text": "Ślub w kościele pw. Narodzenia NMP." },
+      "exit": { "time": "15:30", "title": "Wyjście i życzenia", "text": "Zdjęcia, życzenia i przejazd do Barcic." },
+      "welcome": { "time": "16:30", "title": "Powitanie na sali", "text": "Chleb, sól i pierwszy toast w Rezydencji Las Vegas." },
+      "dinner": { "time": "17:30", "title": "Obiad weselny", "text": "Uroczysta kolacja i przemówienia." },
+      "dance": { "time": "20:00", "title": "Pierwszy taniec", "text": "Otwieramy parkiet — potem biesiada do rana." },
+      "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Tradycyjne zabawy i życzenia na nową drogę." },
+      "end": { "time": "04:00", "title": "Zakończenie zabawy", "text": "Poprawiny ogłaszamy na sali." }
     }
   },
-  "about": {
-    "kicker": "O nas",
-    "title": "Lokalna pracownia z doświadczeniem",
-    "p1": "Tworzymy strony wizytówkowe dla warsztatów, gabinetów, sal weselnych i sklepów. Każdy projekt da się skopiować z tego szablonu i wypełnić danymi klienta.",
-    "p2": "Nie potrzebujesz backendu, żeby mieć profesjonalną stronę: telefon, mapa, galeria i dokumenty RODO są wbudowane.",
-    "statYears": "lat na rynku",
-    "statClients": "zrealizowanych realizacji",
-    "statSupport": "wsparcie po starcie"
-  },
-  "team": {
-    "kicker": "Zespół",
-    "title": "Ludzie, z którymi rozmawiasz",
-    "roles": {
-      "owner": "Właściciel / kontakt",
-      "specialist": "Specjalista",
-      "assistant": "Opieka klienta"
+  "tables": {
+    "kicker": "Rozsada",
+    "title": "Plan stołów",
+    "subtitle": "Przykładowe grupy — na żywej stronie pary lista jest imienna.",
+    "groups": {
+      "couple": { "title": "Stół pary", "text": "Dorota, Marcin, świadkowie i rodzice." },
+      "brideFamily": { "title": "Rodzina panny młodej", "text": "Rodzeństwo, ciocie, wujkowie i kuzynostwo Doroty." },
+      "groomFamily": { "title": "Rodzina pana młodego", "text": "Najbliżsi Marcina z Piwnicznej i okolic." },
+      "friends": { "title": "Przyjaciele", "text": "Ekipa ze studiów, pracy i wspólnych wyjazdów." },
+      "piwniczna": { "title": "Goście z Piwnicznej", "text": "Sąsiedzi, chór i znajomi z parafii." },
+      "barcice": { "title": "Goście z Barcic", "text": "Przyjaciele z doliny Popradu." }
     }
+  },
+  "menuFood": {
+    "kicker": "Kuchnia",
+    "title": "Menu weselne",
+    "subtitle": "Przykładowe dania — diety zgłaszaliście w potwierdzeniu obecności.",
+    "welcome": { "title": "Powitanie", "text": "Wino, soki, lemoniada i przekąski na tacy." },
+    "soup": { "title": "Zupa", "text": "Krem z dyni z prażonymi pestkami." },
+    "main": { "title": "Danie główne", "text": "Polędwiczki wieprzowe albo łosoś; wersja wegetariańska na życzenie." },
+    "dessert": { "title": "Deser", "text": "Tort weselny, lody i słodki bufet." }
+  },
+  "logistics": {
+    "kicker": "Organizacja",
+    "title": "Sprawy organizacyjne",
+    "subtitle": "Dojazd, dzieci, nocleg i strój — w jednym miejscu.",
+    "travel": { "title": "Dojazd", "text": "Z kościoła w Piwnicznej do Barcic to ok. 10 minut DK87. Parking przy Rezydencji Las Vegas." },
+    "kids": { "title": "Dzieci", "text": "Dzieci są mile widziane. Na sali są krzesełka i kącik na drzemkę." },
+    "stay": { "title": "Nocleg", "text": "Pokoje w ośrodku Las Vegas — zgłoście nocleg w potwierdzeniu obecności, miejsc jest ograniczona liczba." },
+    "dress": { "title": "Dress code", "text": "Elegancki strój wieczorowy. Beż, zieleń i ciepłe odcienie pasują do sali." },
+    "bus": { "title": "Bus", "text": "Po mszy kursuje bus ze Starego Sącza do Barcic i z powrotem nad ranem. Zaznaczcie miejsce w potwierdzeniu obecności." }
+  },
+  "gifts": {
+    "kicker": "Prezenty",
+    "title": "Zamiast kwiatów",
+    "subtitle": "Wasza obecność jest najważniejsza. Jeśli chcecie coś dodać, oto nasze prośby.",
+    "wine": { "title": "Wino", "text": "Ulubiona butelka do piwniczki — czerwone, białe albo coś lokalnego." },
+    "books": { "title": "Książki", "text": "Tytuł, który warto przeczytać we dwoje." },
+    "travel": { "title": "Wkład w podróż", "text": "Zamiast kwiatów — cegiełka na wspólny wyjazd. Numeru konta tu nie publikujemy." },
+    "sweets": { "title": "Słodycze", "text": "Domowe przetwory, miód albo ulubione ciasteczka na stół." }
+  },
+  "rsvp": {
+    "kicker": "Potwierdzenie",
+    "title": "Potwierdź obecność",
+    "subtitle": "Formularz zapisuje zgłoszenie w tej przeglądarce — bez wysyłki na serwer. Na prezentacji pokazuje pełny przepływ gościa.",
+    "name": "Imię i nazwisko",
+    "presence": "Obecność",
+    "presenceCeremony": "Tylko ślub",
+    "presenceReception": "Tylko wesele",
+    "presenceBoth": "Ślub i wesele",
+    "plusOne": "Osoba towarzysząca (+1)",
+    "plusOneYes": "Tak",
+    "plusOneNo": "Nie",
+    "diet": "Dieta",
+    "dietNone": "Bez ograniczeń",
+    "dietVeg": "Wegetariańska",
+    "dietVegan": "Wegańska",
+    "dietOther": "Inna (wpisz w uwadze)",
+    "children": "Dzieci",
+    "childrenNone": "Bez dzieci",
+    "childrenYes": "Będą z nami dzieci",
+    "bus": "Bus",
+    "busYes": "Prosimy o miejsce w busie",
+    "busNo": "Dojazd we własnym zakresie",
+    "stay": "Nocleg",
+    "stayYes": "Prosimy o nocleg w ośrodku",
+    "stayNo": "Nocleg we własnym zakresie",
+    "note": "Uwagi (alergie, dieta, wiek dzieci)",
+    "submit": "Wyślij potwierdzenie",
+    "success": "Dziękujemy — zgłoszenie zapisaliśmy w tej przeglądarce.",
+    "reset": "Wyślij kolejne zgłoszenie"
   },
   "gallery": {
-    "kicker": "Galeria",
-    "title": "Zobacz realizacje",
+    "kicker": "Zdjęcia",
+    "title": "Nasza galeria",
     "subtitle": "Kliknij zdjęcie, aby otworzyć je w powiększeniu.",
     "close": "Zamknij",
     "prev": "Poprzednie",
     "next": "Następne"
   },
-  "pricing": {
-    "kicker": "Cennik",
-    "title": "Przejrzyste pakiety",
-    "subtitle": "Kwoty przykładowe — podmień w tłumaczeniach albo w komponencie.",
-    "from": "od",
-    "cta": "Zapytaj o termin",
-    "plans": {
-      "start": {
-        "name": "Start",
-        "price": "1 900 zł",
-        "items": ["Jedna strona", "Galeria", "Kontakt i mapa"]
-      },
-      "biz": {
-        "name": "Biznes",
-        "price": "3 400 zł",
-        "items": ["Wszystko ze Start", "Cennik i zespół", "3 warianty graficzne"]
-      },
-      "care": {
-        "name": "Opieka",
-        "price": "190 zł / mc",
-        "items": ["Aktualizacje treści", "Kopie zapasowe plików", "Priorytetowy kontakt"]
-      }
+  "guestbook": {
+    "kicker": "Po weselu",
+    "title": "Księga gości",
+    "subtitle": "Kilka słów, które zostały z nami. Chcesz dopisać swoje? Napisz e-mail.",
+    "cta": "Dodaj wpis",
+    "entries": {
+      "one": { "name": "Kasia i Marek", "text": "Piękna msza i parkiet do białego rana. Dziękujemy za zaproszenie!" },
+      "two": { "name": "Babcia Zosia", "text": "Takiego wesela jeszcze nie było — a pierwszy taniec rozczulił całą salę." },
+      "three": { "name": "Ekipa ze studiów", "text": "Barcice wyglądały jak z pocztówki. Do zobaczenia na poprawinach." }
     }
+  },
+  "faq": {
+    "kicker": "Pytania",
+    "title": "FAQ",
+    "subtitle": "Najczęstsze sprawy logistyczne — żeby nie dzwonić do pary w ostatniej chwili.",
+    "items": {
+      "parking": { "q": "Czy przy sali jest parking?", "a": "Tak, przy Rezydencji Las Vegas jest duży parking dla gości weselnych." },
+      "church": { "q": "Jak dojechać z kościoła na salę?", "a": "Około 10 minut DK87 z Piwnicznej-Zdroju do Barcic. Po mszy kursuje też bus — zaznaczcie miejsce w potwierdzeniu obecności." },
+      "kids": { "q": "Czy można przyjść z dziećmi?", "a": "Tak. Zaznaczcie liczbę dzieci i ewentualny kącik do spania w uwadze przy potwierdzeniu obecności." },
+      "diet": { "q": "Jak zgłosić dietę?", "a": "W formularzu potwierdzenia obecności wybierzcie wariant albo wpiszcie alergię w uwadze." },
+      "dress": { "q": "Jaki jest dress code?", "a": "Elegancki strój wieczorowy. Unikajcie sportowych butów na parkiecie — sala ma drewnianą podłogę." },
+      "stay": { "q": "Czy są noclegi na miejscu?", "a": "Tak, ośrodek ma pokoje 2- i 3-osobowe. Zgłoście nocleg w potwierdzeniu obecności, bo miejsc jest mniej niż gości." },
+      "gifts": { "q": "Co z prezentem?", "a": "Obecność wystarczy. Jeśli chcecie coś dodać — wino, książka albo wkład w podróż. Numeru konta nie publikujemy." },
+      "photos": { "q": "Gdzie będą zdjęcia po weselu?", "a": "Galeria na tej stronie. Film i pełną relację fotografa podeślemy mailem, gdy będą gotowe." }
+    }
+  },
+  "witnesses": {
+    "kicker": "Drużyna",
+    "title": "Świadkowie",
+    "subtitle": "W razie pytań o bus, nocleg albo rozsady — piszcie do Ani albo Tomka.",
+    "maid": "Świadkowa",
+    "bestMan": "Świadek"
   },
   "contact": {
     "kicker": "Kontakt",
-    "title": "Umów wizytę",
-    "subtitle": "Zadzwoń lub napisz — odpowiadamy w godzinach otwarcia.",
-    "address": "Adres",
+    "title": "Dorota i Marcin",
+    "subtitle": "Dane poglądowe na potrzeby prezentacji — nie są to prywatne numery pary.",
+    "bride": "Panna młoda",
+    "groom": "Pan młody",
     "phone": "Telefon",
     "email": "E-mail",
-    "hours": "Godziny otwarcia",
-    "map": "Mapa dojazdu",
-    "closed": "nieczynne"
+    "mapCeremony": "Mapa — ślub",
+    "mapReception": "Mapa — wesele"
+  },
+  "photos": {
+    "hero": "Dorota i Marcin pod wspólnym welonem, złote światło",
+    "intimate": "Zbliżenie pary, czoła przy sobie",
+    "brideSmile": "Panna młoda uśmiecha się przez ramię pana młodego",
+    "hands": "Splecione dłonie pary i obrączka",
+    "churchExit": "Radosne wyjście z kościoła",
+    "ceremony": "Para przy ołtarzu w kościele w Piwnicznej-Zdroju",
+    "firstDance": "Pierwszy taniec na sali, białe konfetti",
+    "sacrament": "Ksiądz owija stułę wokół złączonych rąk",
+    "brideDetails": "Detale panny młodej: perfumy, biżuteria i bukiet",
+    "groomDetails": "Obrączki na zegarku, spinki i poszetka pana młodego"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone.",
     "createdBy": "Strona stworzona przez",
     "privacy": "Polityka prywatności",
-    "rodo": "RODO"
+    "rodo": "RODO",
+    "demo": "To strona demonstracyjna na potrzeby prezentacji."
   },
   "cookies": {
     "title": "Zgoda na pliki cookies i przetwarzanie danych",
-    "text": "Korzystamy z plików cookies oraz przetwarzamy dane zgodnie z informacją RODO i polityką prywatności. Aby kontynuować, potwierdź zgodę poniżej.",
+    "text": "Korzystamy z niezbędnych plików cookies (język, zgoda) oraz — jeśli wypełnicie potwierdzenie obecności — zapisujemy zgłoszenie lokalnie w przeglądarce. Szczegóły w RODO i polityce prywatności.",
     "accept": "Akceptuję",
     "checkbox": "Wyrażam zgodę na wykorzystywanie plików cookies oraz przetwarzanie danych osobowych w celach opisanych w dokumentach RODO i polityki prywatności."
   },
   "legal": {
-    "disclaimer": "To szablon. Treść wymaga weryfikacji prawnej przed publikacją u klienta.",
+    "disclaimer": "To strona demonstracyjna (portfolio). Treść prawna jest poglądowa i wymaga weryfikacji przed publikacją u prawdziwej pary.",
     "back": "Wróć do strony głównej",
     "rodoTitle": "Informacja RODO",
     "privacyTitle": "Polityka prywatności"
   },
   "theme": {
-    "dark": "Tryb ciemny",
-    "light": "Tryb jasny",
     "lang": "Język",
     "dev": "Warianty graficzne (panel deweloperski)"
   },

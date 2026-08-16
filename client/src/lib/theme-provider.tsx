@@ -15,9 +15,6 @@ import {
   type ThemeTokens,
 } from "@/config/theme";
 
-const PRESET_KEY = "theme-preset";
-const MODE_KEY = "color-mode";
-
 type ColorMode = "light" | "dark";
 
 type ThemeContextValue = {
@@ -30,31 +27,9 @@ type ThemeContextValue = {
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-function readPresetId(): ThemePresetId {
-  try {
-    const stored = localStorage.getItem(PRESET_KEY);
-    if (stored === "classic" || stored === "modern" || stored === "elegant") {
-      return stored;
-    }
-  } catch {
-    /* ignore */
-  }
-  return defaultPresetId;
-}
-
-function readMode(): ColorMode {
-  try {
-    const stored = localStorage.getItem(MODE_KEY);
-    if (stored === "dark" || stored === "light") return stored;
-  } catch {
-    /* ignore */
-  }
-  return "light";
-}
-
-function applyTokens(tokens: ThemeTokens, mode: ColorMode) {
+function applyTokens(tokens: ThemeTokens) {
   const root = document.documentElement;
-  root.classList.toggle("dark", mode === "dark");
+  root.classList.remove("dark");
   root.style.setProperty("--radius", tokens.radius);
   root.style.setProperty("--font-heading-stack", tokens.headingFont);
   root.style.setProperty("--font-body", tokens.bodyFont);
@@ -88,27 +63,20 @@ function applyTokens(tokens: ThemeTokens, mode: ColorMode) {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [presetId, setPresetIdState] = useState<ThemePresetId>(readPresetId);
-  const [mode, setMode] = useState<ColorMode>(readMode);
+  const [presetId, setPresetIdState] = useState<ThemePresetId>(defaultPresetId);
   const preset = useMemo(() => getPreset(presetId), [presetId]);
+  const mode: ColorMode = "light";
 
   useEffect(() => {
-    const tokens = mode === "dark" ? preset.dark : preset.light;
-    applyTokens(tokens, mode);
-    try {
-      localStorage.setItem(PRESET_KEY, presetId);
-      localStorage.setItem(MODE_KEY, mode);
-    } catch {
-      /* ignore */
-    }
-  }, [preset, presetId, mode]);
+    applyTokens(preset.light);
+  }, [preset]);
 
   const setPresetId = useCallback((id: ThemePresetId) => {
     setPresetIdState(id);
   }, []);
 
   const toggleMode = useCallback(() => {
-    setMode((current) => (current === "dark" ? "light" : "dark"));
+    /* Light-only wedding theme */
   }, []);
 
   const value = useMemo(

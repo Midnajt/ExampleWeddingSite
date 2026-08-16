@@ -1,31 +1,34 @@
 # Katalog grafik
 
-Agent i człowiek mają czytać ten plik zamiast zgadywać po bitmapach / SVG.
+Agent i człowiek mają czytać ten plik zamiast zgadywać po bitmapach.
 Podmieniając plik zachowaj **tę samą nazwę**, albo zaktualizuj import w `client/src/config/assets.ts`.
 
 ## `client/assets/` — importowane w aplikacji
 
-| Plik | Zastosowanie | Sugerowane proporcje |
+Źródło: pełnowymiarowe JPG z `example_photos/` (do 6720 px / ~26 MB). Na stronę idzie kopia webowa: dłuższy bok **1920 px**, JPEG quality 85.
+
+| Plik | Zastosowanie | Kadr źródłowy |
 | --- | --- | --- |
-| `hero.svg` | Tło / zdjęcie sekcji Hero | 16:9, min. 1600×900 |
-| `about.svg` | Zdjęcie w sekcji O nas | 4:3, min. 1200×900 |
-| `slider-1.svg` | Slajd 1 karuzeli | 2:1, min. 1600×800 |
-| `slider-2.svg` | Slajd 2 karuzeli | 2:1, min. 1600×800 |
-| `slider-3.svg` | Slajd 3 karuzeli | 2:1, min. 1600×800 |
-| `gallery-1.svg` | Galeria, pozycja 1 (lightbox) | 4:3, min. 1200×900 |
-| `gallery-2.svg` | Galeria, pozycja 2 | 4:3 |
-| `gallery-3.svg` | Galeria, pozycja 3 | 4:3 |
-| `gallery-4.svg` | Galeria, pozycja 4 | 4:3 |
-| `team-1.svg` | Portret — Anna Nowak | 4:5, min. 800×1000 |
-| `team-2.svg` | Portret — Piotr Wiśniewski | 4:5 |
-| `team-3.svg` | Portret — Marta Zielińska | 4:5 |
+| `5F4A6221.jpg` | Hero — para pod welonem | 6720×4480 → 1920×1280 |
+| `5F4A5869.jpg` | Historia — portret intymny (lewy) | 4480×6720 → 1280×1920 |
+| `5F4A5888.jpg` | Historia — splecione dłonie (środek) | 5688×3792 → 1920×1280 |
+| `5F4A5971.jpg` | Historia — uśmiech panny młodej (prawy) | 6720×4480 → 1920×1280 |
+| `5F4A9191.jpg` | Slider — wyjście z kościoła | 2257×3386 → 1280×1920 |
+| `5F4A8913.jpg` | Slider — ceremonia | 2932×4398 → 1280×1920 |
+| `5F4A9728.jpg` | Slider — pierwszy taniec | 6146×4097 → 1920×1280 |
+| `5F4A8998.jpg` | Galeria — sakrament | 5707×3805 → 1920×1280 |
+| `5F4A8392.jpg` | Galeria — detale panny młodej | 6557×4371 → 1920×1280 |
+| `5F4A8617.jpg` | Galeria — detale pana młodego | 4107×6160 → 1280×1920 |
+| `watercolor-floral.png` | Ornament — separator (tło przezroczyste) | nie skalować z JPG |
 
-Obecne pliki to **placeholdery SVG** (gradient + etykieta nazwy). W projekcie klienta wrzuć zdjęcia JPG/WebP pod tymi samymi nazwami albo zmień rozszerzenia w `assets.ts`.
+Galeria lightbox używa **wszystkich 10 JPG**. Placeholdery SVG nie są importowane.
 
-## `client/public/images/` — bez hasha Vite, ścieżka stała
+`watercolor-floral.png`: białe tło wykrojone do alfy, żeby `brightness-0 invert` w hero nie robił białego kwadratu.
+
+## `client/public/images/`
 
 | Plik | Zastosowanie |
 | --- | --- |
-| `og-image.svg` | Open Graph / udostępnianie w social (`index.html` → `og:image`) |
+| `og-image.jpg` | Open Graph — kopia webowego `5F4A6221.jpg` |
 
-`favicon.svg` leży w `client/public/favicon.svg`.
+`favicon.svg` — monogram D&M w `client/public/favicon.svg`.

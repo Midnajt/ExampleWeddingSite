@@ -1,14 +1,21 @@
 import { useTranslation } from "react-i18next";
-import { DevPanel } from "@/components/layout/DevPanel";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { EventCards } from "@/components/sections/EventCards";
+import { CountdownDays } from "@/components/sections/CountdownDays";
+import { LoveStory } from "@/components/sections/LoveStory";
 import { Slider } from "@/components/sections/Slider";
-import { Services } from "@/components/sections/Services";
-import { About } from "@/components/sections/About";
-import { Team } from "@/components/sections/Team";
+import { DayTimeline } from "@/components/sections/DayTimeline";
+import { TablePlan } from "@/components/sections/TablePlan";
+import { WeddingMenu } from "@/components/sections/WeddingMenu";
+import { LogisticsGrid } from "@/components/sections/LogisticsGrid";
+import { GiftWishes } from "@/components/sections/GiftWishes";
+import { RsvpForm } from "@/components/sections/RsvpForm";
 import { Gallery } from "@/components/sections/Gallery";
-import { Pricing } from "@/components/sections/Pricing";
+import { GuestBook } from "@/components/sections/GuestBook";
+import { FaqAccordion } from "@/components/sections/FaqAccordion";
+import { Witnesses } from "@/components/sections/Witnesses";
 import { Contact } from "@/components/sections/Contact";
 import { CookieBanner } from "@/components/legal/CookieBanner";
 import { PrivacyPage, RodoPage } from "@/components/legal/LegalPages";
@@ -18,12 +25,20 @@ function HomePage() {
   return (
     <main id="content">
       <Hero />
+      <EventCards />
+      <CountdownDays />
+      <LoveStory />
       <Slider />
-      <Services />
-      <About />
-      <Team />
+      <DayTimeline />
+      <TablePlan />
+      <WeddingMenu />
+      <LogisticsGrid />
+      <GiftWishes />
+      <RsvpForm />
       <Gallery />
-      <Pricing />
+      <GuestBook />
+      <FaqAccordion />
+      <Witnesses />
       <Contact />
     </main>
   );
@@ -42,7 +57,6 @@ export default function App() {
         {t("common.skip")}
       </a>
       <div className="sticky top-0 z-40">
-        <DevPanel />
         <Navbar />
       </div>
       {view === "rodo" ? <RodoPage /> : view === "privacy" ? <PrivacyPage /> : <HomePage />}

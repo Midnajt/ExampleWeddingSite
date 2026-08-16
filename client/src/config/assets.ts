@@ -1,29 +1,43 @@
-import hero from "../../assets/hero.svg?url";
-import about from "../../assets/about.svg?url";
-import slider1 from "../../assets/slider-1.svg?url";
-import slider2 from "../../assets/slider-2.svg?url";
-import slider3 from "../../assets/slider-3.svg?url";
-import gallery1 from "../../assets/gallery-1.svg?url";
-import gallery2 from "../../assets/gallery-2.svg?url";
-import gallery3 from "../../assets/gallery-3.svg?url";
-import gallery4 from "../../assets/gallery-4.svg?url";
-import team1 from "../../assets/team-1.svg?url";
-import team2 from "../../assets/team-2.svg?url";
-import team3 from "../../assets/team-3.svg?url";
+import hero from "../../assets/5F4A6221.jpg?url";
+import intimate from "../../assets/5F4A5869.jpg?url";
+import brideSmile from "../../assets/5F4A5971.jpg?url";
+import hands from "../../assets/5F4A5888.jpg?url";
+import churchExit from "../../assets/5F4A9191.jpg?url";
+import ceremony from "../../assets/5F4A8913.jpg?url";
+import firstDance from "../../assets/5F4A9728.jpg?url";
+import sacrament from "../../assets/5F4A8998.jpg?url";
+import brideDetails from "../../assets/5F4A8392.jpg?url";
+import groomDetails from "../../assets/5F4A8617.jpg?url";
+import ornament from "../../assets/watercolor-floral.png?url";
+
+export type PhotoItem = {
+  src: string;
+  altKey: string;
+};
 
 export const images = {
   hero,
-  about,
+  ornament,
+  story: [
+    { src: intimate, altKey: "photos.intimate" },
+    { src: hands, altKey: "photos.hands" },
+    { src: brideSmile, altKey: "photos.brideSmile" },
+  ] as const satisfies readonly PhotoItem[],
   slider: [
-    { src: slider1, altKey: "slider-1" },
-    { src: slider2, altKey: "slider-2" },
-    { src: slider3, altKey: "slider-3" },
-  ],
+    { src: churchExit, altKey: "photos.churchExit" },
+    { src: ceremony, altKey: "photos.ceremony" },
+    { src: firstDance, altKey: "photos.firstDance" },
+  ] as const satisfies readonly PhotoItem[],
   gallery: [
-    { src: gallery1, alt: "Galeria 1" },
-    { src: gallery2, alt: "Galeria 2" },
-    { src: gallery3, alt: "Galeria 3" },
-    { src: gallery4, alt: "Galeria 4" },
-  ],
-  team: [team1, team2, team3],
+    { src: hero, altKey: "photos.hero" },
+    { src: intimate, altKey: "photos.intimate" },
+    { src: brideSmile, altKey: "photos.brideSmile" },
+    { src: hands, altKey: "photos.hands" },
+    { src: churchExit, altKey: "photos.churchExit" },
+    { src: ceremony, altKey: "photos.ceremony" },
+    { src: firstDance, altKey: "photos.firstDance" },
+    { src: sacrament, altKey: "photos.sacrament" },
+    { src: brideDetails, altKey: "photos.brideDetails" },
+    { src: groomDetails, altKey: "photos.groomDetails" },
+  ] as const satisfies readonly PhotoItem[],
 } as const;

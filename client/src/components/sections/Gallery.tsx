@@ -20,25 +20,25 @@ export function Gallery() {
   };
 
   return (
-    <Section id="galeria" className="bg-muted/40">
+    <Section id="galeria">
       <Container>
         <SectionHeader
           kicker={t("gallery.kicker")}
           title={t("gallery.title")}
           subtitle={t("gallery.subtitle")}
         />
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
           {items.map((item, i) => (
             <button
-              key={item.src}
+              key={`${item.src}-${i}`}
               type="button"
               className="group overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
               onClick={() => setIndex(i)}
             >
               <img
                 src={item.src}
-                alt={item.alt}
-                className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:h-52"
+                alt={t(item.altKey)}
+                className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-105 md:h-44"
                 loading="lazy"
               />
             </button>
@@ -47,10 +47,14 @@ export function Gallery() {
       </Container>
       <Dialog open={index !== null} onOpenChange={(open) => !open && setIndex(null)}>
         <DialogContent className="bg-background p-2 sm:max-w-5xl">
-          <DialogTitle className="sr-only">{current?.alt}</DialogTitle>
+          <DialogTitle className="sr-only">{current ? t(current.altKey) : ""}</DialogTitle>
           {current ? (
             <div className="relative">
-              <img src={current.src} alt={current.alt} className="max-h-[80vh] w-full object-contain" />
+              <img
+                src={current.src}
+                alt={t(current.altKey)}
+                className="max-h-[80vh] w-full object-contain"
+              />
               <div className="absolute inset-y-0 left-0 flex items-center">
                 <Button variant="secondary" size="icon" onClick={prev} aria-label={t("gallery.prev")}>
                   <ChevronLeft />

@@ -1,132 +1,221 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "about": "About",
-    "team": "Team",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "story": "Our story",
+    "schedule": "Schedule",
     "gallery": "Gallery",
-    "pricing": "Pricing",
+    "faq": "FAQ",
     "contact": "Contact",
+    "rsvp": "Confirm attendance",
     "menu": "Menu",
     "close": "Close"
   },
   "hero": {
-    "kicker": "A local business landing page",
-    "title": "We handle the details so you can focus on clients",
-    "subtitle": "Complete services in Warsaw — book by phone or email. No forms, no chatbot queue.",
-    "ctaCall": "Call us",
-    "ctaEmail": "Send email",
-    "scroll": "See our offer"
+    "kicker": "28 September 2024",
+    "title": "Dorota & Marcin",
+    "subtitle": "Thank you for celebrating with us — the mass in Piwniczna-Zdrój, the party in Barcice.",
+    "ctaGallery": "See photos",
+    "ctaRsvp": "Confirm attendance"
+  },
+  "events": {
+    "kicker": "Where and when",
+    "title": "Ceremony and reception",
+    "subtitle": "Two places in the Poprad valley — church first, then the venue.",
+    "ceremony": "Ceremony",
+    "reception": "Reception",
+    "time": "Time",
+    "address": "Address",
+    "map": "Open map"
+  },
+  "countdown": {
+    "kicker": "Countdown",
+    "title": "The wedding is behind us",
+    "daysAgo": "{{count}} days have passed since our wedding.",
+    "dateLabel": "28 September 2024"
+  },
+  "story": {
+    "kicker": "Our story",
+    "title": "How it started",
+    "p1": "We met in the most ordinary way — a chat that was meant to last a minute and turned into a walk along the Poprad. Barcice and Piwniczna have been our shared landscape ever since.",
+    "p2": "The proposal was quiet: rings, a date on a watch, and the decision that 28 September 2024 would be our day. Thank you for celebrating it with us."
   },
   "slider": {
-    "title": "The look and feel",
-    "subtitle": "Sample frames — replace files in client/assets."
+    "title": "Favourite moments",
+    "subtitle": "The ceremony, leaving the church, and the first dance."
   },
-  "services": {
-    "kicker": "Offer",
-    "title": "What we do",
-    "subtitle": "Pick a package — from a one-off launch to ongoing care.",
+  "schedule": {
+    "kicker": "Schedule",
+    "title": "The day at a glance",
+    "subtitle": "Sample times — this is how the day unfolded.",
     "items": {
-      "consult": {
-        "title": "Consult",
-        "text": "Goals, budget and timeline. A clear plan before we start."
-      },
-      "design": {
-        "title": "Design",
-        "text": "A coherent layout you can reuse and update for the next client."
-      },
-      "delivery": {
-        "title": "Delivery",
-        "text": "Static files ready for FTP. No server and no database required."
-      },
-      "care": {
-        "title": "Care",
-        "text": "Copy tweaks, seasonal banners and price-list updates on request."
-      }
+      "gather": { "time": "13:30", "title": "Gather at the church", "text": "Guests meet at the parish church in Piwniczna-Zdrój." },
+      "mass": { "time": "14:00", "title": "Mass and sacrament", "text": "Wedding at the Church of the Nativity of the Blessed Virgin Mary." },
+      "exit": { "time": "15:30", "title": "Leaving the church", "text": "Photos, congratulations, then the drive to Barcice." },
+      "welcome": { "time": "16:30", "title": "Welcome at the venue", "text": "Bread, salt and the first toast at Las Vegas Residence." },
+      "dinner": { "time": "17:30", "title": "Wedding dinner", "text": "A seated meal and speeches." },
+      "dance": { "time": "20:00", "title": "First dance", "text": "We open the floor — then the party runs until morning." },
+      "oczepiny": { "time": "00:00", "title": "Oczepiny", "text": "Traditional games and wishes for the new road." },
+      "end": { "time": "04:00", "title": "Last dance", "text": "The after-party is announced on the night." }
     }
   },
-  "about": {
-    "kicker": "About",
-    "title": "A local studio with delivery experience",
-    "p1": "We build brochure sites for workshops, clinics, wedding venues and shops. Clone this template and fill in the client details.",
-    "p2": "You do not need a backend for a professional site: phone, map, gallery and privacy pages are built in.",
-    "statYears": "years in business",
-    "statClients": "delivered projects",
-    "statSupport": "post-launch support"
-  },
-  "team": {
-    "kicker": "Team",
-    "title": "People you will talk to",
-    "roles": {
-      "owner": "Owner / contact",
-      "specialist": "Specialist",
-      "assistant": "Client care"
+  "tables": {
+    "kicker": "Seating",
+    "title": "Table plan",
+    "subtitle": "Sample groups — a live couple site would list names.",
+    "groups": {
+      "couple": { "title": "Sweetheart table", "text": "Dorota, Marcin, witnesses and parents." },
+      "brideFamily": { "title": "Bride’s family", "text": "Dorota’s siblings, aunts, uncles and cousins." },
+      "groomFamily": { "title": "Groom’s family", "text": "Marcin’s closest family from Piwniczna and nearby." },
+      "friends": { "title": "Friends", "text": "University, work and travel companions." },
+      "piwniczna": { "title": "Guests from Piwniczna", "text": "Neighbours, choir and parish friends." },
+      "barcice": { "title": "Guests from Barcice", "text": "Friends from the Poprad valley." }
     }
+  },
+  "menuFood": {
+    "kicker": "Kitchen",
+    "title": "Wedding menu",
+    "subtitle": "Sample dishes — diets were collected in the attendance form.",
+    "welcome": { "title": "Welcome", "text": "Wine, juices, lemonade and canapés." },
+    "soup": { "title": "Soup", "text": "Roasted pumpkin cream with toasted seeds." },
+    "main": { "title": "Main", "text": "Pork tenderloin or salmon; a vegetarian plate on request." },
+    "dessert": { "title": "Dessert", "text": "Wedding cake, ice cream and a sweet buffet." }
+  },
+  "logistics": {
+    "kicker": "Practicalities",
+    "title": "Need to know",
+    "subtitle": "Travel, children, rooms and dress code in one place.",
+    "travel": { "title": "Getting there", "text": "About 10 minutes on DK87 from the church in Piwniczna to Barcice. Parking at Las Vegas Residence." },
+    "kids": { "title": "Children", "text": "Children are welcome. High chairs and a quiet corner are available." },
+    "stay": { "title": "Rooms", "text": "Rooms at Las Vegas — request a stay in the attendance form; spaces are limited." },
+    "dress": { "title": "Dress code", "text": "Evening formal. Beige, green and warm tones suit the venue." },
+    "bus": { "title": "Shuttle", "text": "After mass a bus runs from Stary Sącz to Barcice and back at dawn. Mark a seat in the attendance form." }
+  },
+  "gifts": {
+    "kicker": "Gifts",
+    "title": "Instead of flowers",
+    "subtitle": "Your presence is the gift. If you would like to add something, here are our wishes.",
+    "wine": { "title": "Wine", "text": "A favourite bottle — red, white or something local." },
+    "books": { "title": "Books", "text": "A title worth reading together." },
+    "travel": { "title": "A travel fund", "text": "Instead of flowers — a contribution to a trip. We do not publish an account number here." },
+    "sweets": { "title": "Sweets", "text": "Homemade preserves, honey or biscuits for the table." }
+  },
+  "rsvp": {
+    "kicker": "Reply",
+    "title": "Confirm attendance",
+    "subtitle": "The form stores your reply in this browser — nothing is sent to a server. On a client demo it shows the full guest flow.",
+    "name": "Full name",
+    "presence": "Attendance",
+    "presenceCeremony": "Ceremony only",
+    "presenceReception": "Reception only",
+    "presenceBoth": "Ceremony and reception",
+    "plusOne": "Plus one",
+    "plusOneYes": "Yes",
+    "plusOneNo": "No",
+    "diet": "Diet",
+    "dietNone": "No restrictions",
+    "dietVeg": "Vegetarian",
+    "dietVegan": "Vegan",
+    "dietOther": "Other (add a note)",
+    "children": "Children",
+    "childrenNone": "No children",
+    "childrenYes": "We are bringing children",
+    "bus": "Shuttle",
+    "busYes": "Please save a bus seat",
+    "busNo": "We will travel ourselves",
+    "stay": "Overnight",
+    "stayYes": "Please reserve a room",
+    "stayNo": "We have our own stay",
+    "note": "Notes (allergies, diet, children’s ages)",
+    "submit": "Send confirmation",
+    "success": "Thank you — we saved your reply in this browser.",
+    "reset": "Submit another reply"
   },
   "gallery": {
-    "kicker": "Gallery",
-    "title": "See the work",
+    "kicker": "Photos",
+    "title": "Gallery",
     "subtitle": "Click a photo to open it larger.",
     "close": "Close",
     "prev": "Previous",
     "next": "Next"
   },
-  "pricing": {
-    "kicker": "Pricing",
-    "title": "Straightforward packages",
-    "subtitle": "Sample amounts — replace them in translations or in the component.",
-    "from": "from",
-    "cta": "Ask for a date",
-    "plans": {
-      "start": {
-        "name": "Start",
-        "price": "PLN 1,900",
-        "items": ["One-page site", "Gallery", "Contact and map"]
-      },
-      "biz": {
-        "name": "Business",
-        "price": "PLN 3,400",
-        "items": ["Everything in Start", "Pricing and team", "3 visual variants"]
-      },
-      "care": {
-        "name": "Care",
-        "price": "PLN 190 / mo",
-        "items": ["Content updates", "File backups", "Priority contact"]
-      }
+  "guestbook": {
+    "kicker": "After the wedding",
+    "title": "Guest book",
+    "subtitle": "A few words that stayed with us. Want to add yours? Send an email.",
+    "cta": "Add a note",
+    "entries": {
+      "one": { "name": "Kasia and Marek", "text": "A beautiful mass and a dance floor until dawn. Thank you for having us!" },
+      "two": { "name": "Grandma Zosia", "text": "We have never seen a wedding like this — the first dance moved the whole room." },
+      "three": { "name": "University friends", "text": "Barcice looked like a postcard. See you at the after-party." }
     }
+  },
+  "faq": {
+    "kicker": "Questions",
+    "title": "FAQ",
+    "subtitle": "The practical bits — so you do not have to call the couple at the last minute.",
+    "items": {
+      "parking": { "q": "Is there parking at the venue?", "a": "Yes, Las Vegas Residence has a large car park for wedding guests." },
+      "church": { "q": "How do we get from the church to the venue?", "a": "About 10 minutes on DK87 from Piwniczna-Zdrój to Barcice. A shuttle also runs after mass — mark a seat in the attendance form." },
+      "kids": { "q": "May we bring children?", "a": "Yes. Note the number of children and a nap corner in the attendance form comments." },
+      "diet": { "q": "How do we flag a diet?", "a": "Pick an option in the attendance form or describe an allergy in the notes." },
+      "dress": { "q": "What is the dress code?", "a": "Evening formal. Skip sports shoes on the wooden dance floor." },
+      "stay": { "q": "Are there rooms on site?", "a": "Yes, the resort has 2- and 3-person rooms. Request a stay in the attendance form — there are fewer rooms than guests." },
+      "gifts": { "q": "What about gifts?", "a": "Your presence is enough. If you wish to add something — wine, a book or a travel contribution. We do not publish an account number." },
+      "photos": { "q": "Where will photos appear after the wedding?", "a": "In the gallery on this site. We will email the film and the full photographer set when they are ready." }
+    }
+  },
+  "witnesses": {
+    "kicker": "The team",
+    "title": "Witnesses",
+    "subtitle": "Questions about the bus, rooms or seating — write to Ania or Tomek.",
+    "maid": "Maid of honour",
+    "bestMan": "Best man"
   },
   "contact": {
     "kicker": "Contact",
-    "title": "Book a visit",
-    "subtitle": "Call or email — we reply during opening hours.",
-    "address": "Address",
+    "title": "Dorota and Marcin",
+    "subtitle": "Sample details for this demo — not the couple’s private numbers.",
+    "bride": "Bride",
+    "groom": "Groom",
     "phone": "Phone",
     "email": "Email",
-    "hours": "Opening hours",
-    "map": "Directions",
-    "closed": "closed"
+    "mapCeremony": "Map — ceremony",
+    "mapReception": "Map — reception"
+  },
+  "photos": {
+    "hero": "Dorota and Marcin under a shared veil in golden light",
+    "intimate": "Close-up of the couple, foreheads together",
+    "brideSmile": "The bride smiling over the groom’s shoulder",
+    "hands": "Joined hands and a wedding ring",
+    "churchExit": "Joyful exit from the church",
+    "ceremony": "The couple at the altar in Piwniczna-Zdrój",
+    "firstDance": "First dance with white heart confetti",
+    "sacrament": "The priest wrapping a stole around joined hands",
+    "brideDetails": "Bride details: perfume, jewellery and bouquet",
+    "groomDetails": "Rings on a watch, cufflinks and the groom’s pocket square"
   },
   "footer": {
     "rights": "All rights reserved.",
     "createdBy": "Website by",
     "privacy": "Privacy policy",
-    "rodo": "GDPR notice"
+    "rodo": "GDPR notice",
+    "demo": "This is a demonstration site for client presentations."
   },
   "cookies": {
     "title": "Cookie and data-processing consent",
-    "text": "We use cookies and process data as described in the GDPR notice and privacy policy. Confirm consent below to continue.",
+    "text": "We use essential cookies (language, consent) and — if you fill in the attendance form — store the reply locally in your browser. Details are in the GDPR notice and privacy policy.",
     "accept": "Accept",
     "checkbox": "I agree to cookies and to personal-data processing for the purposes described in the GDPR notice and privacy policy."
   },
   "legal": {
-    "disclaimer": "This is a template. Have a lawyer review the copy before publishing for a client.",
+    "disclaimer": "This is a demonstration (portfolio) site. The legal copy is a sample and needs review before publishing for a real couple.",
     "back": "Back to home",
     "rodoTitle": "GDPR notice",
     "privacyTitle": "Privacy policy"
   },
   "theme": {
-    "dark": "Dark mode",
-    "light": "Light mode",
     "lang": "Language",
     "dev": "Visual variants (dev panel)"
   },

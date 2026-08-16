@@ -22,7 +22,7 @@ export function Slider() {
               <CarouselItem key={slide.src}>
                 <img
                   src={slide.src}
-                  alt={slide.altKey}
+                  alt={t(slide.altKey)}
                   className="h-64 w-full rounded-xl object-cover md:h-[28rem]"
                   loading="lazy"
                 />

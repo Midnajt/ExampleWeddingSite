@@ -10,28 +10,30 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-heading text-lg font-semibold">{site.name}</p>
-          <p className="text-muted-foreground mt-2 text-sm">{site.address.full}</p>
-          <p className="mt-2 text-sm">
-            <a className="hover:underline" href={site.phoneHref}>
-              {site.phone}
-            </a>
-            <br />
-            <a className="hover:underline" href={site.emailHref}>
-              {site.email}
-            </a>
-          </p>
+          <p className="text-muted-foreground mt-2 text-sm">{t("hero.kicker")}</p>
+          <p className="text-muted-foreground mt-2 text-sm">{t("footer.demo")}</p>
         </div>
         <div>
           <p className="text-sm font-medium">{t("nav.home")}</p>
           <ul className="text-muted-foreground mt-3 space-y-2 text-sm">
             <li>
-              <a className="hover:text-foreground" href="#oferta">
-                {t("nav.services")}
+              <a className="hover:text-foreground" href="#slub">
+                {t("nav.ceremony")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#cennik">
-                {t("nav.pricing")}
+              <a className="hover:text-foreground" href="#wesele">
+                {t("nav.reception")}
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-foreground" href="#rsvp">
+                {t("nav.rsvp")}
+              </a>
+            </li>
+            <li>
+              <a className="hover:text-foreground" href="#galeria">
+                {t("nav.gallery")}
               </a>
             </li>
             <li>
@@ -54,22 +56,12 @@ export function Footer() {
                 {t("footer.privacy")}
               </a>
             </li>
-            <li>
-              <a
-                className="hover:text-foreground"
-                href={site.social.facebook}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
           </ul>
         </div>
       </div>
       <div className="text-muted-foreground mx-auto max-w-6xl border-t px-4 py-6 text-xs sm:px-6">
         <p>
-          © {year} {site.legalName} {site.city} · {t("footer.rights")}
+          © {year} {site.legalName} · {t("footer.rights")}
         </p>
         <p className="mt-2">
           {t("footer.createdBy")}{" "}
