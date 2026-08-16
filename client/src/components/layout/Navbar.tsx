@@ -21,6 +21,9 @@ const LINKS = [
   { href: "#kontakt", key: "nav.contact" },
 ] as const;
 
+const sheetLinkClass =
+  "rounded-md px-2 py-3 text-base transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:bg-accent focus-visible:text-accent-foreground focus-visible:outline-none";
+
 export function Navbar() {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -66,13 +69,18 @@ export function Navbar() {
               <nav className="flex flex-col gap-2 px-4" aria-label={t("nav.menu")}>
                 {LINKS.map((link) => (
                   <SheetClose asChild key={link.href}>
-                    <a href={link.href} className="hover:bg-accent rounded-md px-2 py-3 text-base">
+                    <a href={link.href} className={sheetLinkClass}>
                       {t(link.key)}
                     </a>
                   </SheetClose>
                 ))}
                 <SheetClose asChild>
-                  <a href="#rsvp" className="hover:bg-accent rounded-md px-2 py-3 text-base">
+                  <a href="#polecamy" className={sheetLinkClass}>
+                    {t("partners.title")}
+                  </a>
+                </SheetClose>
+                <SheetClose asChild>
+                  <a href="#rsvp" className={sheetLinkClass}>
                     {t("nav.rsvp")}
                   </a>
                 </SheetClose>

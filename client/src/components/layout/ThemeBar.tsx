@@ -38,7 +38,10 @@ export function ThemeBar() {
               variant={active ? "default" : "ghost"}
               aria-pressed={active}
               aria-label={label}
-              className={cn("h-7 gap-1.5 px-2 text-xs sm:px-3")}
+              className={cn(
+                "h-7 gap-1.5 px-2 text-xs sm:px-3",
+                !active && "text-foreground hover:bg-accent hover:text-accent-foreground",
+              )}
               onClick={() => setPresetId(preset.id)}
             >
               <Icon className="size-3.5" />
