@@ -20,4 +20,4 @@ Na stornie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Na telefonach napis „Zmień motyw” pozostaje widoczny przed ikonami wyboru stylu. Tekstowe nazwy Boho, Las i Prestige nadal są ukryte na małych ekranach, dzięki czemu belka pozostaje kompaktowa. Od szerokości `sm` belka pokazuje zarówno napis, jak i pełne nazwy motywów.
+Systemowy dark mode telefonu nie zmienia już kolorów motywów Boho ani Las. Przeglądarka dostaje wymuszoną jasną paletę kontrolek i nie wykonuje automatycznego przyciemniania strony. Prestige pozostaje świadomie ciemny wyłącznie po wybraniu tego motywu.

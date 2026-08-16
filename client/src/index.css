@@ -31,6 +31,7 @@
 }
 
 :root {
+  color-scheme: only light;
   --radius: 0.75rem;
   --font-heading-stack: "Cormorant Garamond", serif;
   --font-body: "Nunito Sans", sans-serif;
@@ -87,6 +88,7 @@
 }
 
 html[data-theme="noirGold"] {
+  color-scheme: dark;
   --gold-metallic: linear-gradient(105deg, #e8d48a 0%, #c9a227 52%, #8b6914 100%);
   --gold-metallic-hover: linear-gradient(105deg, #f0e0a0 0%, #d4af37 50%, #9a7618 100%);
   --gold-figure: linear-gradient(

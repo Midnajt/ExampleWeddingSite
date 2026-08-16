@@ -166,3 +166,11 @@ Propozycja kolejności (do wyboru):
 - Na ekranach poniżej breakpointu `sm` belka pokazuje napis „Zmień motyw” oraz ikony Boho, Las i Prestige.
 - Nazwy presetów pozostają widoczne od `sm`; etykiety `aria-label` zachowują dostępność przycisków mobilnych.
 - Mobilne ikony są wyśrodkowane, a desktopowy układ belki pozostaje bez zmian.
+
+---
+
+## 12. Kolory niezależne od trybu systemowego
+
+- Motywy Boho i Las deklarują `color-scheme: only light`, więc mobilna przeglądarka nie nakłada automatycznej konwersji dark mode.
+- Prestige jawnie używa `color-scheme: dark`, ponieważ jego ciemna paleta wynika z wyboru motywu, a nie z ustawienia telefonu.
+- Kolory strony zależą teraz wyłącznie od wybranego presetu.
