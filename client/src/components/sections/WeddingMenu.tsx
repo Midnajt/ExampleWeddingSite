@@ -3,7 +3,7 @@ import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const KEYS = ["welcome", "soup", "main", "dessert"] as const;
+const KEYS = ["welcome", "soup", "main", "dessert", "late"] as const;
 
 export function WeddingMenu() {
   const { t } = useTranslation();

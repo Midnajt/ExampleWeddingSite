@@ -1,14 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { BookOpen, Cookie, Plane, Wine } from "lucide-react";
+import { Home, Wine } from "lucide-react";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ITEMS = [
+  { key: "house", icon: Home },
   { key: "wine", icon: Wine },
-  { key: "books", icon: BookOpen },
-  { key: "travel", icon: Plane },
-  { key: "sweets", icon: Cookie },
 ] as const;
 
 export function GiftWishes() {

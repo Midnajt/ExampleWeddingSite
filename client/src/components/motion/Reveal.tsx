@@ -81,7 +81,7 @@ export function StaggerItem({
 }: StaggerItemProps) {
   const reduce = useReducedMotion();
   const shared = {
-    className: cn(hover && "h-full", className),
+    className: cn(hover && "h-full rounded-xl", className),
     variants: scale ? scaleItem : staggerItem,
     whileHover: reduce || !hover ? undefined : hoverLift,
   };

@@ -68,10 +68,11 @@ export function staggerContainer(stagger = 0.1, delay = 0.15): Variants {
   };
 }
 
-/** Warm boho glow (terracotta + olive) instead of AddPattern cyan/violet. */
+/** Lift only on the wrapper; glow uses drop-shadow so it follows rounded corners. */
 export const hoverLift = {
   y: -6,
-  boxShadow: "0 0 20px rgba(158, 90, 48, 0.2), 0 0 40px rgba(94, 101, 81, 0.14)",
+  filter:
+    "drop-shadow(0 8px 16px rgba(158, 90, 48, 0.18)) drop-shadow(0 0 28px rgba(94, 101, 81, 0.12))",
 };
 
 export const hoverGlow = {

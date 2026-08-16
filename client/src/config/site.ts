@@ -81,4 +81,42 @@ export const site = {
     name: "AddPattern Marcin Krzysztoszek",
     url: "https://midnajt.github.io/AddPattern.github.io/",
   },
+  partners: [
+    {
+      id: "makeup",
+      name: "Atelier Urody „Róża”",
+      place: "Nowy Sącz",
+      url: "https://roza-makijaz.example.pl",
+    },
+    {
+      id: "florist",
+      name: "Kwiaciarnia Nad Popradem",
+      place: "Piwniczna-Zdrój",
+      url: "https://kwiaty-poprad.example.pl",
+    },
+    {
+      id: "hair",
+      name: "Salon „Lok i Warkocz”",
+      place: "Stary Sącz",
+      url: "https://lok-warkocz.example.pl",
+    },
+    {
+      id: "tailor",
+      name: "Pracownia Krawiecka „Atłas”",
+      place: "Nowy Sącz",
+      url: "https://atlas-krawiec.example.pl",
+    },
+    {
+      id: "band",
+      name: "Kapela „Harnasie znad Popradu”",
+      place: "Barcice",
+      url: "https://harnasie-poprad.example.pl",
+    },
+    {
+      id: "photo",
+      name: "Fotografia Ślubna „Chwila”",
+      place: "Piwniczna-Zdrój",
+      url: "https://fotografia-chwila.example.pl",
+    },
+  ],
 } as const;

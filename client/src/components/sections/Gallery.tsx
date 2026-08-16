@@ -30,16 +30,16 @@ export function Gallery() {
         />
         <Stagger className="grid grid-cols-2 gap-3 md:grid-cols-5" stagger={0.08} delay={0.1}>
           {items.map((item, i) => (
-            <StaggerItem key={`${item.src}-${i}`} scale>
+            <StaggerItem key={`${item.src}-${i}`} scale className="min-w-0 w-full">
               <button
                 type="button"
-                className="group overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
+                className="group block w-full overflow-hidden rounded-lg focus-visible:ring-ring ring-offset-background focus-visible:ring-2 focus-visible:outline-none"
                 onClick={() => setIndex(i)}
               >
                 <img
                   src={item.src}
                   alt={t(item.altKey)}
-                  className="ease-smooth h-40 w-full object-cover transition-transform duration-500 group-hover:scale-[1.06] md:h-44"
+                  className="ease-smooth h-28 w-full object-cover object-[center_18%] transition-transform duration-500 group-hover:scale-[1.06] md:h-32"
                   loading="lazy"
                 />
               </button>

@@ -26,7 +26,8 @@ export function Slider() {
                     <img
                       src={slide.src}
                       alt={t(slide.altKey)}
-                      className="ease-smooth h-64 w-full object-cover transition-transform duration-500 group-hover:scale-[1.06] md:h-[28rem]"
+                      className="ease-smooth h-72 w-full object-cover transition-transform duration-500 group-hover:scale-[1.04] md:h-[32rem]"
+                      style={{ objectPosition: slide.objectPosition ?? "center 20%" }}
                       loading="lazy"
                     />
                   </div>

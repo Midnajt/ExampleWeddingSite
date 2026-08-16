@@ -14,9 +14,10 @@ import { GiftWishes } from "@/components/sections/GiftWishes";
 import { RsvpForm } from "@/components/sections/RsvpForm";
 import { Gallery } from "@/components/sections/Gallery";
 import { GuestBook } from "@/components/sections/GuestBook";
-import { FaqAccordion } from "@/components/sections/FaqAccordion";
 import { Witnesses } from "@/components/sections/Witnesses";
 import { Contact } from "@/components/sections/Contact";
+import { Partners } from "@/components/sections/Partners";
+import { PartnersFab } from "@/components/layout/PartnersFab";
 import { CookieBanner } from "@/components/legal/CookieBanner";
 import { PrivacyPage, RodoPage } from "@/components/legal/LegalPages";
 import { useHashView } from "@/lib/hash-view";
@@ -37,9 +38,9 @@ function HomePage() {
       <RsvpForm />
       <Gallery />
       <GuestBook />
-      <FaqAccordion />
       <Witnesses />
       <Contact />
+      <Partners />
     </main>
   );
 }
@@ -61,6 +62,7 @@ export default function App() {
       </div>
       {view === "rodo" ? <RodoPage /> : view === "privacy" ? <PrivacyPage /> : <HomePage />}
       <Footer />
+      <PartnersFab />
       <CookieBanner />
     </div>
   );

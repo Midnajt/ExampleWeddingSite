@@ -41,6 +41,11 @@ export function Footer() {
                 {t("nav.contact")}
               </a>
             </li>
+            <li>
+              <a className="hover:text-foreground" href="#polecamy">
+                {t("partners.title")}
+              </a>
+            </li>
           </ul>
         </div>
         <div>

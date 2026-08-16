@@ -18,7 +18,6 @@ const LINKS = [
   { href: "#historia", key: "nav.story" },
   { href: "#plan", key: "nav.schedule" },
   { href: "#galeria", key: "nav.gallery" },
-  { href: "#faq", key: "nav.faq" },
   { href: "#kontakt", key: "nav.contact" },
 ] as const;
 

@@ -6,7 +6,6 @@
     "story": "Our story",
     "schedule": "Schedule",
     "gallery": "Gallery",
-    "faq": "FAQ",
     "contact": "Contact",
     "rsvp": "Confirm attendance",
     "menu": "Menu",
@@ -65,41 +64,85 @@
     "title": "Table plan",
     "subtitle": "Sample groups — a live couple site would list names.",
     "groups": {
-      "couple": { "title": "Sweetheart table", "text": "Dorota, Marcin, witnesses and parents." },
-      "brideFamily": { "title": "Bride’s family", "text": "Dorota’s siblings, aunts, uncles and cousins." },
-      "groomFamily": { "title": "Groom’s family", "text": "Marcin’s closest family from Piwniczna and nearby." },
-      "friends": { "title": "Friends", "text": "University, work and travel companions." },
-      "piwniczna": { "title": "Guests from Piwniczna", "text": "Neighbours, choir and parish friends." },
-      "barcice": { "title": "Guests from Barcice", "text": "Friends from the Poprad valley." }
+      "couple": {
+        "title": "Sweetheart table",
+        "text": "Dorota and Marcin, witnesses Anna and Tomasz, and both sets of parents. Speeches after dinner land here."
+      },
+      "brideFamily": {
+        "title": "Table 1 — bride’s family",
+        "text": "Dorota’s siblings, grandparents, aunts and uncles from Nowy Sącz, and cousins on her mother’s side."
+      },
+      "groomFamily": {
+        "title": "Table 2 — groom’s family",
+        "text": "Marcin’s closest family from Piwniczna: godparents, aunts, uncles and cousins from the Poprad valley."
+      },
+      "friends": {
+        "title": "Tables 3–4 — friends",
+        "text": "University, work and travel companions. Table 3 is nearer the dance floor, table 4 faces the garden."
+      },
+      "orchestra": {
+        "title": "Table 5 — the band",
+        "text": "Musicians and the sound engineer — a short dinner break between sets; instruments stay on stage."
+      },
+      "locals": {
+        "title": "Table 6 — Piwniczna and Barcice",
+        "text": "Neighbours, the parish choir and friends from the valley. A named list is at the hall entrance."
+      }
     }
   },
   "menuFood": {
     "kicker": "Kitchen",
     "title": "Wedding menu",
     "subtitle": "Sample dishes — diets were collected in the attendance form.",
-    "welcome": { "title": "Welcome", "text": "Wine, juices, lemonade and canapés." },
-    "soup": { "title": "Soup", "text": "Roasted pumpkin cream with toasted seeds." },
-    "main": { "title": "Main", "text": "Pork tenderloin or salmon; a vegetarian plate on request." },
-    "dessert": { "title": "Dessert", "text": "Wedding cake, ice cream and a sweet buffet." }
+    "welcome": {
+      "title": "Welcome · 16:30",
+      "text": "Sparkling wine, juices, mint lemonade and trays of canapés, tartines and olives from the moment you enter."
+    },
+    "soup": {
+      "title": "Soup · 17:30",
+      "text": "Hot course: roasted pumpkin cream with toasted seeds. A milder red borscht for children."
+    },
+    "main": {
+      "title": "Main · 18:15",
+      "text": "Hot course: pork tenderloin in mushroom sauce or baked salmon. Vegetarian pumpkin risotto if you marked it on the attendance form."
+    },
+    "dessert": {
+      "title": "Dessert · 20:30",
+      "text": "Wedding cake after the first dance, ice cream and a sweet buffet (meringue, mini éclairs, fruit)."
+    },
+    "late": {
+      "title": "Late supper · 23:30",
+      "text": "Żurek in a bread bowl, pastries and mini bakes — fuel for oczepiny."
+    }
   },
   "logistics": {
     "kicker": "Practicalities",
     "title": "Need to know",
-    "subtitle": "Travel, children, rooms and dress code in one place.",
+    "subtitle": "Travel, shuttle, children and rooms in one place.",
     "travel": { "title": "Getting there", "text": "About 10 minutes on DK87 from the church in Piwniczna to Barcice. Parking at Las Vegas Residence." },
-    "kids": { "title": "Children", "text": "Children are welcome. High chairs and a quiet corner are available." },
+    "kids": { "title": "Children", "text": "Children are welcome. High chairs, a quiet corner and an animator in a side room." },
     "stay": { "title": "Rooms", "text": "Rooms at Las Vegas — request a stay in the attendance form; spaces are limited." },
-    "dress": { "title": "Dress code", "text": "Evening formal. Beige, green and warm tones suit the venue." },
-    "bus": { "title": "Shuttle", "text": "After mass a bus runs from Stary Sącz to Barcice and back at dawn. Mark a seat in the attendance form." }
+    "bus": {
+      "title": "Guest shuttle",
+      "text": "A hired 20-seat bus. 15:45 departure from the church (stop on Krakowska Street), extra pickup around 16:05 at the Rynek car park in Stary Sącz. At the venue around 16:20. Return from Las Vegas Residence at 3:45 towards Stary Sącz and Piwniczna. Mark a seat in the attendance form."
+    },
+    "animator": {
+      "title": "Children’s animator",
+      "text": "From 17:00 to 22:00 in the room next to the dance floor, Kasia runs games, face painting and a craft corner (ages 3–10). Parents stay at the party — note childcare on the attendance form."
+    }
   },
   "gifts": {
     "kicker": "Gifts",
     "title": "Instead of flowers",
-    "subtitle": "Your presence is the gift. If you would like to add something, here are our wishes.",
-    "wine": { "title": "Wine", "text": "A favourite bottle — red, white or something local." },
-    "books": { "title": "Books", "text": "A title worth reading together." },
-    "travel": { "title": "A travel fund", "text": "Instead of flowers — a contribution to a trip. We do not publish an account number here." },
-    "sweets": { "title": "Sweets", "text": "Homemade preserves, honey or biscuits for the table." }
+    "subtitle": "Your presence is the gift. If you would like to add something, these two are most welcome.",
+    "house": {
+      "title": "Envelopes for the house",
+      "text": "If the envelope holds more than wishes, it goes towards building our home: the foundations, windows facing the Poprad, and the first kitchen we share. Every złoty is another brick."
+    },
+    "wine": {
+      "title": "Wine",
+      "text": "A favourite bottle for the cellar — red, white or something from Małopolska."
+    }
   },
   "rsvp": {
     "kicker": "Reply",
@@ -146,24 +189,18 @@
     "subtitle": "A few words that stayed with us. Want to add yours? Send an email.",
     "cta": "Add a note",
     "entries": {
-      "one": { "name": "Kasia and Marek", "text": "A beautiful mass and a dance floor until dawn. Thank you for having us!" },
-      "two": { "name": "Grandma Zosia", "text": "We have never seen a wedding like this — the first dance moved the whole room." },
-      "three": { "name": "University friends", "text": "Barcice looked like a postcard. See you at the after-party." }
-    }
-  },
-  "faq": {
-    "kicker": "Questions",
-    "title": "FAQ",
-    "subtitle": "The practical bits — so you do not have to call the couple at the last minute.",
-    "items": {
-      "parking": { "q": "Is there parking at the venue?", "a": "Yes, Las Vegas Residence has a large car park for wedding guests." },
-      "church": { "q": "How do we get from the church to the venue?", "a": "About 10 minutes on DK87 from Piwniczna-Zdrój to Barcice. A shuttle also runs after mass — mark a seat in the attendance form." },
-      "kids": { "q": "May we bring children?", "a": "Yes. Note the number of children and a nap corner in the attendance form comments." },
-      "diet": { "q": "How do we flag a diet?", "a": "Pick an option in the attendance form or describe an allergy in the notes." },
-      "dress": { "q": "What is the dress code?", "a": "Evening formal. Skip sports shoes on the wooden dance floor." },
-      "stay": { "q": "Are there rooms on site?", "a": "Yes, the resort has 2- and 3-person rooms. Request a stay in the attendance form — there are fewer rooms than guests." },
-      "gifts": { "q": "What about gifts?", "a": "Your presence is enough. If you wish to add something — wine, a book or a travel contribution. We do not publish an account number." },
-      "photos": { "q": "Where will photos appear after the wedding?", "a": "In the gallery on this site. We will email the film and the full photographer set when they are ready." }
+      "one": {
+        "name": "Uncle Marek",
+        "text": "The welcome tartare was so good I took a second portion “for science”. Then a third, to confirm the findings."
+      },
+      "two": {
+        "name": "Aunt Bożenka",
+        "text": "Lovely flowers, really — only that ecru next to the runner. I would have gone more cream. But the bride decides. Still a better bouquet than Kasia’s last year."
+      },
+      "three": {
+        "name": "Cousin Krzysiek",
+        "text": "Las Vegas Residence, and the GPS led to Barcice. I stood in the car park waiting for the Bellagio fountain. No fountain. The żurek in a bread bowl — that showed up."
+      }
     }
   },
   "witnesses": {
@@ -183,6 +220,38 @@
     "email": "Email",
     "mapCeremony": "Map — ceremony",
     "mapReception": "Map — reception"
+  },
+  "partners": {
+    "kicker": "For guests",
+    "title": "We recommend",
+    "subtitle": "The same studios that got us ready for the wedding — book before the ceremony or before the next-day party. Sample offers for this presentation.",
+    "visit": "Visit website",
+    "items": {
+      "makeup": {
+        "role": "Makeup",
+        "offer": "Bridal makeup with a trial, plus looks for the maid of honour and the bride’s mother. An all-day package with touch-ups before the first dance."
+      },
+      "florist": {
+        "role": "Florist",
+        "offer": "Bridal bouquet, boutonnière, church flowers and table arrangements in beige, green and Poprad dried stems."
+      },
+      "hair": {
+        "role": "Hair",
+        "offer": "A trial updo, curls and a braid for the veil. Travel to Piwniczna on the wedding morning from 8:00."
+      },
+      "tailor": {
+        "role": "Tailor",
+        "offer": "Dress alterations, veil hemming, made-to-measure bow ties and waistcoats. Last stitches up to three days before."
+      },
+      "band": {
+        "role": "Band",
+        "offer": "A highland band for the welcome, oczepiny and encores until dawn. Two sets plus a DJ in the break; PA included."
+      },
+      "photo": {
+        "role": "Photographer",
+        "offer": "Coverage from getting ready to oczepiny, portraits by the Poprad, and an online gallery within 21 days."
+      }
+    }
   },
   "photos": {
     "hero": "Dorota and Marcin under a shared veil in golden light",

@@ -13,6 +13,7 @@ import ornament from "../../assets/watercolor-floral.png?url";
 export type PhotoItem = {
   src: string;
   altKey: string;
+  objectPosition?: string;
 };
 
 export const images = {
@@ -24,9 +25,9 @@ export const images = {
     { src: brideSmile, altKey: "photos.brideSmile" },
   ] as const satisfies readonly PhotoItem[],
   slider: [
-    { src: churchExit, altKey: "photos.churchExit" },
-    { src: ceremony, altKey: "photos.ceremony" },
-    { src: firstDance, altKey: "photos.firstDance" },
+    { src: churchExit, altKey: "photos.churchExit", objectPosition: "center 18%" },
+    { src: ceremony, altKey: "photos.ceremony", objectPosition: "center 22%" },
+    { src: firstDance, altKey: "photos.firstDance", objectPosition: "center 28%" },
   ] as const satisfies readonly PhotoItem[],
   gallery: [
     { src: hero, altKey: "photos.hero" },

@@ -1,15 +1,15 @@
 import { useTranslation } from "react-i18next";
-import { Baby, Bus, Car, Moon, Shirt } from "lucide-react";
+import { Baby, Bus, Car, Moon, Sparkles } from "lucide-react";
 import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ITEMS = [
   { key: "travel", icon: Car },
-  { key: "kids", icon: Baby },
-  { key: "stay", icon: Moon },
-  { key: "dress", icon: Shirt },
   { key: "bus", icon: Bus },
+  { key: "kids", icon: Baby },
+  { key: "animator", icon: Sparkles },
+  { key: "stay", icon: Moon },
 ] as const;
 
 export function LogisticsGrid() {

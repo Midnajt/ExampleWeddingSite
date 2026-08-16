@@ -3,7 +3,7 @@ import { Container, Section, SectionHeader } from "@/components/layout/Section";
 import { Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const KEYS = ["couple", "brideFamily", "groomFamily", "friends", "piwniczna", "barcice"] as const;
+const KEYS = ["couple", "brideFamily", "groomFamily", "friends", "orchestra", "locals"] as const;
 
 export function TablePlan() {
   const { t } = useTranslation();

@@ -6,7 +6,6 @@
     "story": "Historia",
     "schedule": "Plan dnia",
     "gallery": "Galeria",
-    "faq": "FAQ",
     "contact": "Kontakt",
     "rsvp": "Potwierdź obecność",
     "menu": "Menu",
@@ -65,41 +64,85 @@
     "title": "Plan stołów",
     "subtitle": "Przykładowe grupy — na żywej stronie pary lista jest imienna.",
     "groups": {
-      "couple": { "title": "Stół pary", "text": "Dorota, Marcin, świadkowie i rodzice." },
-      "brideFamily": { "title": "Rodzina panny młodej", "text": "Rodzeństwo, ciocie, wujkowie i kuzynostwo Doroty." },
-      "groomFamily": { "title": "Rodzina pana młodego", "text": "Najbliżsi Marcina z Piwnicznej i okolic." },
-      "friends": { "title": "Przyjaciele", "text": "Ekipa ze studiów, pracy i wspólnych wyjazdów." },
-      "piwniczna": { "title": "Goście z Piwnicznej", "text": "Sąsiedzi, chór i znajomi z parafii." },
-      "barcice": { "title": "Goście z Barcic", "text": "Przyjaciele z doliny Popradu." }
+      "couple": {
+        "title": "Stół honorowy — para młoda",
+        "text": "Dorota i Marcin, świadkowie Anna i Tomasz oraz rodzice obojga. Tu składamy życzenia po obiedzie."
+      },
+      "brideFamily": {
+        "title": "Stół 1 — rodzina panny młodej",
+        "text": "Rodzeństwo Doroty, dziadkowie, ciocie i wujkowie z Nowego Sącza oraz kuzynostwo od strony mamy."
+      },
+      "groomFamily": {
+        "title": "Stół 2 — rodzina pana młodego",
+        "text": "Najbliżsi Marcina z Piwnicznej: rodzice chrzestni, ciocie, wujkowie i kuzyni z doliny Popradu."
+      },
+      "friends": {
+        "title": "Stoły 3–4 — przyjaciele",
+        "text": "Ekipa ze studiów, pracy i wspólnych wyjazdów. Stół 3 bliżej parkietu, stół 4 od strony ogrodu."
+      },
+      "orchestra": {
+        "title": "Stół 5 — orkiestra",
+        "text": "Zespół i realizator dźwięku — krótka przerwa na kolację między setami, instrumenty zostają na scenie."
+      },
+      "locals": {
+        "title": "Stół 6 — Piwniczna i Barcice",
+        "text": "Sąsiedzi, chór parafialny i znajomi z doliny. Imienna lista wisi przy wejściu na salę."
+      }
     }
   },
   "menuFood": {
     "kicker": "Kuchnia",
     "title": "Menu weselne",
     "subtitle": "Przykładowe dania — diety zgłaszaliście w potwierdzeniu obecności.",
-    "welcome": { "title": "Powitanie", "text": "Wino, soki, lemoniada i przekąski na tacy." },
-    "soup": { "title": "Zupa", "text": "Krem z dyni z prażonymi pestkami." },
-    "main": { "title": "Danie główne", "text": "Polędwiczki wieprzowe albo łosoś; wersja wegetariańska na życzenie." },
-    "dessert": { "title": "Deser", "text": "Tort weselny, lody i słodki bufet." }
+    "welcome": {
+      "title": "Powitanie · 16:30",
+      "text": "Wino musujące, soki, lemoniada z miętą oraz tace z kanapkami, tartinkami i oliwkami — od wejścia na salę."
+    },
+    "soup": {
+      "title": "Zupa · 17:30",
+      "text": "Ciepłe danie: krem z dyni z prażonymi pestkami. Dla dzieci łagodniejszy barszczyk czerwony."
+    },
+    "main": {
+      "title": "Danie główne · 18:15",
+      "text": "Ciepłe danie: polędwiczki wieprzowe w sosie pieczarkowym albo pieczony łosoś. Wersja wegetariańska (risotto z dynią) na życzenie z potwierdzenia obecności."
+    },
+    "dessert": {
+      "title": "Deser · 20:30",
+      "text": "Tort weselny po pierwszym tańcu, lody i słodki bufet (beza, mini eklerki, owoce)."
+    },
+    "late": {
+      "title": "Ciepła kolacja · 23:30",
+      "text": "Żurek w chlebie, paszteciki i mini zapiekanki — żeby starczyło sił do oczepin."
+    }
   },
   "logistics": {
     "kicker": "Organizacja",
     "title": "Sprawy organizacyjne",
-    "subtitle": "Dojazd, dzieci, nocleg i strój — w jednym miejscu.",
+    "subtitle": "Dojazd, bus, dzieci i nocleg — w jednym miejscu.",
     "travel": { "title": "Dojazd", "text": "Z kościoła w Piwnicznej do Barcic to ok. 10 minut DK87. Parking przy Rezydencji Las Vegas." },
-    "kids": { "title": "Dzieci", "text": "Dzieci są mile widziane. Na sali są krzesełka i kącik na drzemkę." },
+    "kids": { "title": "Dzieci", "text": "Dzieci są mile widziane. Na sali są krzesełka, kącik na drzemkę i animator w osobnej salce." },
     "stay": { "title": "Nocleg", "text": "Pokoje w ośrodku Las Vegas — zgłoście nocleg w potwierdzeniu obecności, miejsc jest ograniczona liczba." },
-    "dress": { "title": "Dress code", "text": "Elegancki strój wieczorowy. Beż, zieleń i ciepłe odcienie pasują do sali." },
-    "bus": { "title": "Bus", "text": "Po mszy kursuje bus ze Starego Sącza do Barcic i z powrotem nad ranem. Zaznaczcie miejsce w potwierdzeniu obecności." }
+    "bus": {
+      "title": "Bus dla gości",
+      "text": "Wynajęty 20-osobowy bus. O 15:45 odjazd sprzed kościoła (przystanek przy ul. Krakowskiej), dodatkowy nabór ok. 16:05 na parkingu przy Rynku w Starym Sączu. Na salę ok. 16:20. Powrót z Rezydencji Las Vegas o 3:45 w stronę Starego Sącza i Piwnicznej. Miejsce zaznaczcie w potwierdzeniu obecności."
+    },
+    "animator": {
+      "title": "Animator dla dzieci",
+      "text": "Od 17:00 do 22:00 w salce obok parkietu Kasia prowadzi zabawy, malowanie buziek i kącik kreatywny (dzieci 3–10 lat). Rodzice zostają na weselu — opiekę zgłoście przy potwierdzeniu obecności."
+    }
   },
   "gifts": {
     "kicker": "Prezenty",
     "title": "Zamiast kwiatów",
-    "subtitle": "Wasza obecność jest najważniejsza. Jeśli chcecie coś dodać, oto nasze prośby.",
-    "wine": { "title": "Wino", "text": "Ulubiona butelka do piwniczki — czerwone, białe albo coś lokalnego." },
-    "books": { "title": "Książki", "text": "Tytuł, który warto przeczytać we dwoje." },
-    "travel": { "title": "Wkład w podróż", "text": "Zamiast kwiatów — cegiełka na wspólny wyjazd. Numeru konta tu nie publikujemy." },
-    "sweets": { "title": "Słodycze", "text": "Domowe przetwory, miód albo ulubione ciasteczka na stół." }
+    "subtitle": "Wasza obecność jest najważniejsza. Jeśli chcecie coś dodać, mile widziane są te dwie rzeczy.",
+    "house": {
+      "title": "Koperty na dom",
+      "text": "Jeśli w kopercie znajdzie się coś więcej niż życzenia — trafi na budowę domu: fundamenty, okna od strony Popradu i pierwszą wspólną kuchnię. Każda złotówka to kolejna cegła."
+    },
+    "wine": {
+      "title": "Wino",
+      "text": "Ulubiona butelka do piwniczki — czerwone, białe albo coś z Małopolski."
+    }
   },
   "rsvp": {
     "kicker": "Potwierdzenie",
@@ -146,24 +189,18 @@
     "subtitle": "Kilka słów, które zostały z nami. Chcesz dopisać swoje? Napisz e-mail.",
     "cta": "Dodaj wpis",
     "entries": {
-      "one": { "name": "Kasia i Marek", "text": "Piękna msza i parkiet do białego rana. Dziękujemy za zaproszenie!" },
-      "two": { "name": "Babcia Zosia", "text": "Takiego wesela jeszcze nie było — a pierwszy taniec rozczulił całą salę." },
-      "three": { "name": "Ekipa ze studiów", "text": "Barcice wyglądały jak z pocztówki. Do zobaczenia na poprawinach." }
-    }
-  },
-  "faq": {
-    "kicker": "Pytania",
-    "title": "FAQ",
-    "subtitle": "Najczęstsze sprawy logistyczne — żeby nie dzwonić do pary w ostatniej chwili.",
-    "items": {
-      "parking": { "q": "Czy przy sali jest parking?", "a": "Tak, przy Rezydencji Las Vegas jest duży parking dla gości weselnych." },
-      "church": { "q": "Jak dojechać z kościoła na salę?", "a": "Około 10 minut DK87 z Piwnicznej-Zdroju do Barcic. Po mszy kursuje też bus — zaznaczcie miejsce w potwierdzeniu obecności." },
-      "kids": { "q": "Czy można przyjść z dziećmi?", "a": "Tak. Zaznaczcie liczbę dzieci i ewentualny kącik do spania w uwadze przy potwierdzeniu obecności." },
-      "diet": { "q": "Jak zgłosić dietę?", "a": "W formularzu potwierdzenia obecności wybierzcie wariant albo wpiszcie alergię w uwadze." },
-      "dress": { "q": "Jaki jest dress code?", "a": "Elegancki strój wieczorowy. Unikajcie sportowych butów na parkiecie — sala ma drewnianą podłogę." },
-      "stay": { "q": "Czy są noclegi na miejscu?", "a": "Tak, ośrodek ma pokoje 2- i 3-osobowe. Zgłoście nocleg w potwierdzeniu obecności, bo miejsc jest mniej niż gości." },
-      "gifts": { "q": "Co z prezentem?", "a": "Obecność wystarczy. Jeśli chcecie coś dodać — wino, książka albo wkład w podróż. Numeru konta nie publikujemy." },
-      "photos": { "q": "Gdzie będą zdjęcia po weselu?", "a": "Galeria na tej stronie. Film i pełną relację fotografa podeślemy mailem, gdy będą gotowe." }
+      "one": {
+        "name": "Wujek Marek",
+        "text": "Tatar na powitaniu był tak dobry, że wziąłem drugą porcję „na próbę”. Potem trzecią, bo trzeba było potwierdzić wynik badań."
+      },
+      "two": {
+        "name": "Ciocia Bożenka",
+        "text": "Kwiaty ładne, ładne, tylko ten odcień ecru przy bieżniku — no, ja bym dała bardziej śmietankowy. Ale młodej wolno. Bukiet i tak lepszy niż u Kasi w zeszłym roku."
+      },
+      "three": {
+        "name": "Kuzyn Krzysiek",
+        "text": "Rezydencja Las Vegas, a GPS prowadzi do Barcic. Stałem chwilę na parkingu i czekałem na fontannę Bellagio. Fontanny nie było. Żurek w chlebie — był."
+      }
     }
   },
   "witnesses": {
@@ -183,6 +220,38 @@
     "email": "E-mail",
     "mapCeremony": "Mapa — ślub",
     "mapReception": "Mapa — wesele"
+  },
+  "partners": {
+    "kicker": "Dla gości",
+    "title": "Polecamy",
+    "subtitle": "Te same pracownie, które przygotowały nas do ślubu — umówcie się przed ceremonią albo przed poprawinami. Oferty poglądowe na potrzeby prezentacji.",
+    "visit": "Zobacz stronę",
+    "items": {
+      "makeup": {
+        "role": "Makijaż",
+        "offer": "Makijaż ślubny z próbą, makijaż świadkowej i matki panny młodej. Pakiet „cały dzień” z poprawkami przed pierwszym tańcem."
+      },
+      "florist": {
+        "role": "Florystyka",
+        "offer": "Bukiet panny młodej, butonierka, kwiaty do kościoła i na stoły. Kompozycje w beżu, zieleni i suszu z Popradu."
+      },
+      "hair": {
+        "role": "Fryzura",
+        "offer": "Upiecie z próbą, loki i warkocz do welonu. Dojazd do Piwnicznej w dniu ślubu od 8:00."
+      },
+      "tailor": {
+        "role": "Krawiec",
+        "offer": "Poprawki sukni, skrócenie welonu, muszki i kamizelki na miarę. Ostatnie szwy nawet trzy dni przed terminem."
+      },
+      "band": {
+        "role": "Kapela",
+        "offer": "Góralska kapela na powitanie, oczepiny i bis do rana. Dwa sety + DJ w przerwie, nagłośnienie w cenie."
+      },
+      "photo": {
+        "role": "Fotograf",
+        "offer": "Reportaż od przygotowań do oczepin, zdjęcia plenerowe nad Popradem i galeria online w 21 dni."
+      }
+    }
   },
   "photos": {
     "hero": "Dorota i Marcin pod wspólnym welonem, złote światło",
