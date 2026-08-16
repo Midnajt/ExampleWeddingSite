@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "team": "Team",
+    "gallery": "Gallery",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "kicker": "A local business landing page",
+    "title": "We handle the details so you can focus on clients",
+    "subtitle": "Complete services in Warsaw — book by phone or email. No forms, no chatbot queue.",
+    "ctaCall": "Call us",
+    "ctaEmail": "Send email",
+    "scroll": "See our offer"
+  },
+  "slider": {
+    "title": "The look and feel",
+    "subtitle": "Sample frames — replace files in client/assets."
+  },
+  "services": {
+    "kicker": "Offer",
+    "title": "What we do",
+    "subtitle": "Pick a package — from a one-off launch to ongoing care.",
+    "items": {
+      "consult": {
+        "title": "Consult",
+        "text": "Goals, budget and timeline. A clear plan before we start."
+      },
+      "design": {
+        "title": "Design",
+        "text": "A coherent layout you can reuse and update for the next client."
+      },
+      "delivery": {
+        "title": "Delivery",
+        "text": "Static files ready for FTP. No server and no database required."
+      },
+      "care": {
+        "title": "Care",
+        "text": "Copy tweaks, seasonal banners and price-list updates on request."
+      }
+    }
+  },
+  "about": {
+    "kicker": "About",
+    "title": "A local studio with delivery experience",
+    "p1": "We build brochure sites for workshops, clinics, wedding venues and shops. Clone this template and fill in the client details.",
+    "p2": "You do not need a backend for a professional site: phone, map, gallery and privacy pages are built in.",
+    "statYears": "years in business",
+    "statClients": "delivered projects",
+    "statSupport": "post-launch support"
+  },
+  "team": {
+    "kicker": "Team",
+    "title": "People you will talk to",
+    "roles": {
+      "owner": "Owner / contact",
+      "specialist": "Specialist",
+      "assistant": "Client care"
+    }
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "title": "See the work",
+    "subtitle": "Click a photo to open it larger.",
+    "close": "Close",
+    "prev": "Previous",
+    "next": "Next"
+  },
+  "pricing": {
+    "kicker": "Pricing",
+    "title": "Straightforward packages",
+    "subtitle": "Sample amounts — replace them in translations or in the component.",
+    "from": "from",
+    "cta": "Ask for a date",
+    "plans": {
+      "start": {
+        "name": "Start",
+        "price": "PLN 1,900",
+        "items": ["One-page site", "Gallery", "Contact and map"]
+      },
+      "biz": {
+        "name": "Business",
+        "price": "PLN 3,400",
+        "items": ["Everything in Start", "Pricing and team", "3 visual variants"]
+      },
+      "care": {
+        "name": "Care",
+        "price": "PLN 190 / mo",
+        "items": ["Content updates", "File backups", "Priority contact"]
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Book a visit",
+    "subtitle": "Call or email — we reply during opening hours.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "map": "Directions",
+    "closed": "closed"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "createdBy": "Website by",
+    "privacy": "Privacy policy",
+    "rodo": "GDPR notice"
+  },
+  "cookies": {
+    "title": "Cookie and data-processing consent",
+    "text": "We use cookies and process data as described in the GDPR notice and privacy policy. Confirm consent below to continue.",
+    "accept": "Accept",
+    "checkbox": "I agree to cookies and to personal-data processing for the purposes described in the GDPR notice and privacy policy."
+  },
+  "legal": {
+    "disclaimer": "This is a template. Have a lawyer review the copy before publishing for a client.",
+    "back": "Back to home",
+    "rodoTitle": "GDPR notice",
+    "privacyTitle": "Privacy policy"
+  },
+  "theme": {
+    "dark": "Dark mode",
+    "light": "Light mode",
+    "lang": "Language",
+    "dev": "Visual variants (dev panel)"
+  },
+  "common": {
+    "skip": "Skip to content"
+  }
+}

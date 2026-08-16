@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "services": "Oferta",
+    "about": "O nas",
+    "team": "Zespół",
+    "gallery": "Galeria",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "menu": "Menu",
+    "close": "Zamknij"
+  },
+  "hero": {
+    "kicker": "Wizytówka dla lokalnego biznesu",
+    "title": "Dbamy o detale, żebyś Ty mógł skupić się na kliencie",
+    "subtitle": "Kompleksowe usługi w Warszawie — umów termin telefonem lub napisz e-mail. Bez formularzy, bez czekania na odpowiedź bota.",
+    "ctaCall": "Zadzwoń",
+    "ctaEmail": "Napisz e-mail",
+    "scroll": "Zobacz ofertę"
+  },
+  "slider": {
+    "title": "Klimat miejsca",
+    "subtitle": "Przykładowe kadry — podmień pliki w client/assets."
+  },
+  "services": {
+    "kicker": "Oferta",
+    "title": "Zakres usług",
+    "subtitle": "Dobierz pakiet do potrzeb — od jednorazowej realizacji po stałą współpracę.",
+    "items": {
+      "consult": {
+        "title": "Konsultacja",
+        "text": "Rozmowa o celu, budżecie i terminie. Jasny plan działania jeszcze przed startem."
+      },
+      "design": {
+        "title": "Projekt",
+        "text": "Spójna identyfikacja i układ treści, który da się łatwo zaktualizować przy kolejnym kliencie."
+      },
+      "delivery": {
+        "title": "Realizacja",
+        "text": "Gotowe pliki do wrzucenia na FTP. Działająca strona bez serwera i bazy danych."
+      },
+      "care": {
+        "title": "Opieka",
+        "text": "Drobne zmiany treści, sezonowe banery i aktualizacja cennika na żądanie."
+      }
+    }
+  },
+  "about": {
+    "kicker": "O nas",
+    "title": "Lokalna pracownia z doświadczeniem",
+    "p1": "Tworzymy strony wizytówkowe dla warsztatów, gabinetów, sal weselnych i sklepów. Każdy projekt da się skopiować z tego szablonu i wypełnić danymi klienta.",
+    "p2": "Nie potrzebujesz backendu, żeby mieć profesjonalną stronę: telefon, mapa, galeria i dokumenty RODO są wbudowane.",
+    "statYears": "lat na rynku",
+    "statClients": "zrealizowanych realizacji",
+    "statSupport": "wsparcie po starcie"
+  },
+  "team": {
+    "kicker": "Zespół",
+    "title": "Ludzie, z którymi rozmawiasz",
+    "roles": {
+      "owner": "Właściciel / kontakt",
+      "specialist": "Specjalista",
+      "assistant": "Opieka klienta"
+    }
+  },
+  "gallery": {
+    "kicker": "Galeria",
+    "title": "Zobacz realizacje",
+    "subtitle": "Kliknij zdjęcie, aby otworzyć je w powiększeniu.",
+    "close": "Zamknij",
+    "prev": "Poprzednie",
+    "next": "Następne"
+  },
+  "pricing": {
+    "kicker": "Cennik",
+    "title": "Przejrzyste pakiety",
+    "subtitle": "Kwoty przykładowe — podmień w tłumaczeniach albo w komponencie.",
+    "from": "od",
+    "cta": "Zapytaj o termin",
+    "plans": {
+      "start": {
+        "name": "Start",
+        "price": "1 900 zł",
+        "items": ["Jedna strona", "Galeria", "Kontakt i mapa"]
+      },
+      "biz": {
+        "name": "Biznes",
+        "price": "3 400 zł",
+        "items": ["Wszystko ze Start", "Cennik i zespół", "3 warianty graficzne"]
+      },
+      "care": {
+        "name": "Opieka",
+        "price": "190 zł / mc",
+        "items": ["Aktualizacje treści", "Kopie zapasowe plików", "Priorytetowy kontakt"]
+      }
+    }
+  },
+  "contact": {
+    "kicker": "Kontakt",
+    "title": "Umów wizytę",
+    "subtitle": "Zadzwoń lub napisz — odpowiadamy w godzinach otwarcia.",
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "hours": "Godziny otwarcia",
+    "map": "Mapa dojazdu",
+    "closed": "nieczynne"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "createdBy": "Strona stworzona przez",
+    "privacy": "Polityka prywatności",
+    "rodo": "RODO"
+  },
+  "cookies": {
+    "title": "Zgoda na pliki cookies i przetwarzanie danych",
+    "text": "Korzystamy z plików cookies oraz przetwarzamy dane zgodnie z informacją RODO i polityką prywatności. Aby kontynuować, potwierdź zgodę poniżej.",
+    "accept": "Akceptuję",
+    "checkbox": "Wyrażam zgodę na wykorzystywanie plików cookies oraz przetwarzanie danych osobowych w celach opisanych w dokumentach RODO i polityki prywatności."
+  },
+  "legal": {
+    "disclaimer": "To szablon. Treść wymaga weryfikacji prawnej przed publikacją u klienta.",
+    "back": "Wróć do strony głównej",
+    "rodoTitle": "Informacja RODO",
+    "privacyTitle": "Polityka prywatności"
+  },
+  "theme": {
+    "dark": "Tryb ciemny",
+    "light": "Tryb jasny",
+    "lang": "Język",
+    "dev": "Warianty graficzne (panel deweloperski)"
+  },
+  "common": {
+    "skip": "Przejdź do treści"
+  }
+}
