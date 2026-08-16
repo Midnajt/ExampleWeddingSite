@@ -1,0 +1,91 @@
+import { motion, useReducedMotion } from "framer-motion";
+import type { ReactNode } from "react";
+import {
+  hoverLift,
+  scaleItem,
+  staggerContainer,
+  staggerItem,
+  sectionReveal,
+  viewportHeader,
+  viewportOnce,
+} from "@/lib/motion";
+import { cn } from "@/lib/utils";
+
+type RevealProps = {
+  className?: string;
+  children: ReactNode;
+  delay?: number;
+};
+
+export function Reveal({ className, children, delay = 0 }: RevealProps) {
+  const reduce = useReducedMotion();
+
+  return (
+    <motion.div
+      className={className}
+      variants={sectionReveal}
+      initial={reduce ? false : "hidden"}
+      whileInView="show"
+      viewport={viewportHeader}
+      transition={delay ? { delay } : undefined}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+type StaggerProps = {
+  className?: string;
+  children: ReactNode;
+  stagger?: number;
+  delay?: number;
+  as?: "div" | "ol" | "ul";
+};
+
+export function Stagger({
+  className,
+  children,
+  stagger = 0.1,
+  delay = 0.15,
+  as = "div",
+}: StaggerProps) {
+  const reduce = useReducedMotion();
+  const variants = staggerContainer(stagger, delay);
+  const shared = {
+    className,
+    variants,
+    initial: reduce ? false : ("hidden" as const),
+    whileInView: "show" as const,
+    viewport: viewportOnce,
+  };
+
+  if (as === "ol") return <motion.ol {...shared}>{children}</motion.ol>;
+  if (as === "ul") return <motion.ul {...shared}>{children}</motion.ul>;
+  return <motion.div {...shared}>{children}</motion.div>;
+}
+
+type StaggerItemProps = {
+  className?: string;
+  children: ReactNode;
+  hover?: boolean;
+  scale?: boolean;
+  as?: "div" | "li";
+};
+
+export function StaggerItem({
+  className,
+  children,
+  hover = false,
+  scale = false,
+  as = "div",
+}: StaggerItemProps) {
+  const reduce = useReducedMotion();
+  const shared = {
+    className: cn(hover && "h-full", className),
+    variants: scale ? scaleItem : staggerItem,
+    whileHover: reduce || !hover ? undefined : hoverLift,
+  };
+
+  if (as === "li") return <motion.li {...shared}>{children}</motion.li>;
+  return <motion.div {...shared}>{children}</motion.div>;
+}
