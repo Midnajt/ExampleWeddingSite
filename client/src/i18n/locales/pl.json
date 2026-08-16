@@ -286,7 +286,8 @@
   },
   "theme": {
     "lang": "Język",
-    "dev": "Warianty graficzne (panel deweloperski)"
+    "bar": "Wybór motywu",
+    "change": "Zmień motyw:"
   },
   "common": {
     "skip": "Przejdź do treści"

@@ -72,7 +72,10 @@ export function RsvpForm() {
         <SectionHeader kicker={t("rsvp.kicker")} title={t("rsvp.title")} subtitle={t("rsvp.subtitle")} />
         {saved ? (
           <Reveal>
-            <div className="bg-card mx-auto max-w-xl rounded-xl border p-8 text-center shadow-sm">
+            <div
+              data-slot="glass-panel"
+              className="bg-card mx-auto max-w-xl rounded-xl border p-8 text-center shadow-sm"
+            >
               <p className="font-heading text-2xl">{t("rsvp.success")}</p>
               <p className="text-muted-foreground mt-3 text-sm">{saved.name}</p>
               <Button className="mt-6" variant="outline" onClick={reset}>
@@ -85,6 +88,7 @@ export function RsvpForm() {
             <form
               onSubmit={onSubmit}
               className="bg-card mx-auto grid max-w-xl gap-4 rounded-xl border p-6 shadow-sm"
+              data-slot="glass-panel"
             >
               <label className="grid gap-1.5 text-sm">
                 <span className="font-medium">{t("rsvp.name")}</span>

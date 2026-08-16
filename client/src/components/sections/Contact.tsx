@@ -23,7 +23,10 @@ export function Contact() {
         <Stagger className="grid gap-6 md:grid-cols-2">
           {people.map((person) => (
             <StaggerItem key={person.email} hover>
-              <div className="bg-card h-full rounded-xl border p-6 transition-colors duration-300 hover:border-primary/40">
+              <div
+                data-slot="glass-panel"
+                className="bg-card h-full rounded-xl border p-6 transition-colors duration-300 hover:border-primary/40"
+              >
                 <p className="text-primary text-xs font-medium tracking-widest uppercase">
                   {person.role}
                 </p>

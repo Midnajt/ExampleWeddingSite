@@ -29,7 +29,10 @@ export function CookieBanner() {
   };
 
   return (
-    <div className="bg-background/95 fixed inset-x-0 bottom-0 z-50 border-t p-4 shadow-lg backdrop-blur-md">
+    <div
+      data-slot="cookie-banner"
+      className="bg-background/95 fixed inset-x-0 bottom-0 z-50 border-t p-4 shadow-lg backdrop-blur-md"
+    >
       <div className="mx-auto max-w-3xl">
         <h2 className="font-heading text-lg">{t("cookies.title")}</h2>
         <p className="text-muted-foreground mt-2 text-sm">{t("cookies.text")}</p>

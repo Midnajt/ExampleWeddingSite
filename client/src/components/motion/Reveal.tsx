@@ -1,14 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
-import {
-  hoverLift,
-  scaleItem,
-  staggerContainer,
-  staggerItem,
-  sectionReveal,
-  viewportHeader,
-  viewportOnce,
-} from "@/lib/motion";
+import { getMotionProfile, staggerContainer, viewportHeader, viewportOnce } from "@/lib/motion";
+import { useTheme } from "@/lib/theme-provider";
 import { cn } from "@/lib/utils";
 
 type RevealProps = {
@@ -19,11 +12,13 @@ type RevealProps = {
 
 export function Reveal({ className, children, delay = 0 }: RevealProps) {
   const reduce = useReducedMotion();
+  const { presetId } = useTheme();
+  const motionProfile = getMotionProfile(presetId);
 
   return (
     <motion.div
       className={className}
-      variants={sectionReveal}
+      variants={motionProfile.sectionReveal}
       initial={reduce ? false : "hidden"}
       whileInView="show"
       viewport={viewportHeader}
@@ -80,10 +75,12 @@ export function StaggerItem({
   as = "div",
 }: StaggerItemProps) {
   const reduce = useReducedMotion();
+  const { presetId } = useTheme();
+  const motionProfile = getMotionProfile(presetId);
   const shared = {
     className: cn(hover && "h-full rounded-xl", className),
-    variants: scale ? scaleItem : staggerItem,
-    whileHover: reduce || !hover ? undefined : hoverLift,
+    variants: scale ? motionProfile.scaleItem : motionProfile.staggerItem,
+    whileHover: reduce || !hover ? undefined : motionProfile.hoverLift,
   };
 
   if (as === "li") return <motion.li {...shared}>{children}</motion.li>;

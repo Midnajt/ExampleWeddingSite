@@ -11,7 +11,8 @@ export function PartnersFab() {
   return (
     <a
       href="#polecamy"
-      className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring fixed right-4 bottom-6 z-40 inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium shadow-lg transition-colors focus-visible:ring-2 focus-visible:outline-none"
+      data-slot="partners-fab"
+      className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring fixed right-4 bottom-6 z-40 inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm font-medium shadow-lg transition-all focus-visible:ring-2 focus-visible:outline-none"
     >
       <Sparkles className="size-4 shrink-0" />
       <span>{t("partners.title")}</span>

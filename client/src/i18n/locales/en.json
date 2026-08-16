@@ -286,7 +286,8 @@
   },
   "theme": {
     "lang": "Language",
-    "dev": "Visual variants (dev panel)"
+    "bar": "Choose a theme",
+    "change": "Change theme:"
   },
   "common": {
     "skip": "Skip to content"

@@ -1,3 +1,5 @@
+const addPatternUrl = "https://midnajt.github.io/AddPattern.github.io/";
+
 export const site = {
   name: "Dorota & Marcin",
   legalName: "Dorota i Marcin — strona ślubna (demo)",
@@ -79,44 +81,44 @@ export const site = {
   },
   addPattern: {
     name: "AddPattern Marcin Krzysztoszek",
-    url: "https://midnajt.github.io/AddPattern.github.io/",
+    url: addPatternUrl,
   },
   partners: [
     {
       id: "makeup",
       name: "Atelier Urody „Róża”",
       place: "Nowy Sącz",
-      url: "https://roza-makijaz.example.pl",
+      url: addPatternUrl,
     },
     {
       id: "florist",
       name: "Kwiaciarnia Nad Popradem",
       place: "Piwniczna-Zdrój",
-      url: "https://kwiaty-poprad.example.pl",
+      url: addPatternUrl,
     },
     {
       id: "hair",
       name: "Salon „Lok i Warkocz”",
       place: "Stary Sącz",
-      url: "https://lok-warkocz.example.pl",
+      url: addPatternUrl,
     },
     {
       id: "tailor",
       name: "Pracownia Krawiecka „Atłas”",
       place: "Nowy Sącz",
-      url: "https://atlas-krawiec.example.pl",
+      url: addPatternUrl,
     },
     {
       id: "band",
       name: "Kapela „Harnasie znad Popradu”",
       place: "Barcice",
-      url: "https://harnasie-poprad.example.pl",
+      url: addPatternUrl,
     },
     {
       id: "photo",
       name: "Fotografia Ślubna „Chwila”",
       place: "Piwniczna-Zdrój",
-      url: "https://fotografia-chwila.example.pl",
+      url: addPatternUrl,
     },
   ],
 } as const;

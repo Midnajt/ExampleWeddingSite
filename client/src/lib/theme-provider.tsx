@@ -8,11 +8,12 @@ import {
   type ReactNode,
 } from "react";
 import {
+  THEME_STORAGE_KEY,
   defaultPresetId,
   getPreset,
+  isThemePresetId,
   type ThemePreset,
   type ThemePresetId,
-  type ThemeTokens,
 } from "@/config/theme";
 
 type ColorMode = "light" | "dark";
@@ -27,9 +28,21 @@ type ThemeContextValue = {
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
-function applyTokens(tokens: ThemeTokens) {
+function readStoredPreset(): ThemePresetId {
+  try {
+    const stored = localStorage.getItem(THEME_STORAGE_KEY);
+    if (isThemePresetId(stored)) return stored;
+  } catch {
+    /* private mode / blocked storage */
+  }
+  return defaultPresetId;
+}
+
+function applyTheme(preset: ThemePreset) {
+  const tokens = preset.light;
   const root = document.documentElement;
   root.classList.remove("dark");
+  root.dataset.theme = preset.id;
   root.style.setProperty("--radius", tokens.radius);
   root.style.setProperty("--font-heading-stack", tokens.headingFont);
   root.style.setProperty("--font-body", tokens.bodyFont);
@@ -51,6 +64,8 @@ function applyTokens(tokens: ThemeTokens) {
   root.style.setProperty("--border", tokens.border);
   root.style.setProperty("--input", tokens.input);
   root.style.setProperty("--ring", tokens.ring);
+  root.style.setProperty("--hero-overlay", tokens.heroOverlay);
+  root.style.setProperty("--hero-glow", tokens.heroGlow);
 
   let link = document.getElementById("theme-fonts") as HTMLLinkElement | null;
   if (!link) {
@@ -63,16 +78,25 @@ function applyTokens(tokens: ThemeTokens) {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [presetId, setPresetIdState] = useState<ThemePresetId>(defaultPresetId);
+  const [presetId, setPresetIdState] = useState<ThemePresetId>(() => {
+    const id = readStoredPreset();
+    applyTheme(getPreset(id));
+    return id;
+  });
   const preset = useMemo(() => getPreset(presetId), [presetId]);
   const mode: ColorMode = "light";
 
   useEffect(() => {
-    applyTokens(preset.light);
+    applyTheme(preset);
   }, [preset]);
 
   const setPresetId = useCallback((id: ThemePresetId) => {
     setPresetIdState(id);
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, id);
+    } catch {
+      /* ignore */
+    }
   }, []);
 
   const toggleMode = useCallback(() => {

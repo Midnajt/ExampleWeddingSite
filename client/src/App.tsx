@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Navbar } from "@/components/layout/Navbar";
+import { ThemeBar } from "@/components/layout/ThemeBar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { EventCards } from "@/components/sections/EventCards";
@@ -58,6 +59,7 @@ export default function App() {
         {t("common.skip")}
       </a>
       <div className="sticky top-0 z-40">
+        <ThemeBar />
         <Navbar />
       </div>
       {view === "rodo" ? <RodoPage /> : view === "privacy" ? <PrivacyPage /> : <HomePage />}

@@ -15,7 +15,14 @@ export function Section({ id, className, children }: SectionProps) {
   const { preset } = useTheme();
 
   return (
-    <section id={id} className={cn("bg-white", densityClass(preset.density), className)}>
+    <section
+      id={id}
+      className={cn(
+        preset.surface === "glass" ? "bg-transparent" : "bg-background",
+        densityClass(preset.density),
+        className,
+      )}
+    >
       {children}
     </section>
   );

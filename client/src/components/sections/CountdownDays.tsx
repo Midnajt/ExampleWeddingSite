@@ -21,7 +21,12 @@ export function CountdownDays() {
       <Container>
         <SectionHeader kicker={t("countdown.kicker")} title={t("countdown.title")} />
         <Reveal className="mx-auto max-w-xl text-center">
-          <p className="font-heading text-primary text-7xl font-semibold md:text-8xl">{days}</p>
+          <p
+            data-slot="countdown-figure"
+            className="font-heading text-primary text-7xl font-semibold md:text-8xl"
+          >
+            {days}
+          </p>
           <p className="text-muted-foreground mt-4 text-lg">{t("countdown.daysAgo", { count: days })}</p>
           <p className="mt-2 text-sm tracking-widest uppercase">{t("countdown.dateLabel")}</p>
         </Reveal>

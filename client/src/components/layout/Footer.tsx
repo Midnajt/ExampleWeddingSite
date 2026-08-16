@@ -6,43 +6,43 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t">
+    <footer className="bg-primary text-primary-foreground border-t border-primary-foreground/15">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-heading text-lg font-semibold">{site.name}</p>
-          <p className="text-muted-foreground mt-2 text-sm">{t("hero.kicker")}</p>
-          <p className="text-muted-foreground mt-2 text-sm">{t("footer.demo")}</p>
+          <p className="mt-2 text-sm text-primary-foreground/75">{t("hero.kicker")}</p>
+          <p className="mt-2 text-sm text-primary-foreground/75">{t("footer.demo")}</p>
         </div>
         <div>
           <p className="text-sm font-medium">{t("nav.home")}</p>
-          <ul className="text-muted-foreground mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 text-sm text-primary-foreground/75">
             <li>
-              <a className="hover:text-foreground" href="#slub">
+              <a className="hover:text-primary-foreground" href="#slub">
                 {t("nav.ceremony")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#wesele">
+              <a className="hover:text-primary-foreground" href="#wesele">
                 {t("nav.reception")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#rsvp">
+              <a className="hover:text-primary-foreground" href="#rsvp">
                 {t("nav.rsvp")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#galeria">
+              <a className="hover:text-primary-foreground" href="#galeria">
                 {t("nav.gallery")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#kontakt">
+              <a className="hover:text-primary-foreground" href="#kontakt">
                 {t("nav.contact")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#polecamy">
+              <a className="hover:text-primary-foreground" href="#polecamy">
                 {t("partners.title")}
               </a>
             </li>
@@ -50,21 +50,21 @@ export function Footer() {
         </div>
         <div>
           <p className="text-sm font-medium">{t("footer.privacy")}</p>
-          <ul className="text-muted-foreground mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 text-sm text-primary-foreground/75">
             <li>
-              <a className="hover:text-foreground" href="#/rodo">
+              <a className="hover:text-primary-foreground" href="#/rodo">
                 {t("footer.rodo")}
               </a>
             </li>
             <li>
-              <a className="hover:text-foreground" href="#/polityka">
+              <a className="hover:text-primary-foreground" href="#/polityka">
                 {t("footer.privacy")}
               </a>
             </li>
           </ul>
         </div>
       </div>
-      <div className="text-muted-foreground mx-auto max-w-6xl border-t px-4 py-6 text-xs sm:px-6">
+      <div className="mx-auto max-w-6xl border-t border-primary-foreground/15 px-4 py-6 text-xs text-primary-foreground/70 sm:px-6">
         <p>
           © {year} {site.legalName} · {t("footer.rights")}
         </p>
