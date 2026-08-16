@@ -4,6 +4,7 @@ import { ThemeBar } from "@/components/layout/ThemeBar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { EventCards } from "@/components/sections/EventCards";
+import { GuestEssentials } from "@/components/sections/GuestEssentials";
 import { CountdownDays } from "@/components/sections/CountdownDays";
 import { LoveStory } from "@/components/sections/LoveStory";
 import { Slider } from "@/components/sections/Slider";
@@ -28,6 +29,7 @@ function HomePage() {
     <main id="content">
       <Hero />
       <EventCards />
+      <GuestEssentials />
       <CountdownDays />
       <LoveStory />
       <Slider />

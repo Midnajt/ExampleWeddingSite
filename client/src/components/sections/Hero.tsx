@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Images } from "lucide-react";
+import { BookHeart, CalendarDays, Images, Info } from "lucide-react";
 import { images } from "@/config/assets";
 import { site } from "@/config/site";
 import { FloralDivider } from "@/components/layout/FloralDivider";
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { getMotionProfile } from "@/lib/motion";
 import { useTheme } from "@/lib/theme-provider";
 import { cn } from "@/lib/utils";
+import { getWeddingDateState } from "@/lib/wedding-date";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -16,6 +17,19 @@ export function Hero() {
   const motionProfile = getMotionProfile(presetId);
   const words = site.name.split(" ");
   const glass = preset.surface === "glass";
+  const { phase } = getWeddingDateState(site.weddingDate);
+  const primaryAction =
+    phase === "after"
+      ? { href: "#galeria", label: t("hero.ctaGallery"), icon: Images }
+      : { href: "#niezbednik", label: t("hero.ctaEssentials"), icon: Info };
+  const secondaryAction =
+    phase === "before"
+      ? { href: "#rsvp", label: t("hero.ctaRsvp"), icon: CalendarDays }
+      : phase === "today"
+        ? { href: "#plan", label: t("hero.ctaSchedule"), icon: CalendarDays }
+        : { href: "#ksiega", label: t("hero.ctaGuestBook"), icon: BookHeart };
+  const PrimaryIcon = primaryAction.icon;
+  const SecondaryIcon = secondaryAction.icon;
 
   return (
     <section className="relative min-h-[88vh] overflow-hidden">
@@ -77,7 +91,7 @@ export function Hero() {
             animate="show"
             transition={{ delay: 0.9 }}
           >
-            {t("hero.subtitle")}
+            {t(`hero.subtitle.${phase}`)}
           </motion.p>
 
           <motion.div
@@ -98,15 +112,18 @@ export function Hero() {
           >
             <motion.div whileHover={reduce ? undefined : motionProfile.hoverGlow} whileTap={{ scale: 0.97 }}>
               <Button asChild size="lg">
-                <a href="#galeria">
-                  <Images />
-                  {t("hero.ctaGallery")}
+                <a href={primaryAction.href}>
+                  <PrimaryIcon />
+                  {primaryAction.label}
                 </a>
               </Button>
             </motion.div>
             <motion.div whileHover={reduce ? undefined : { scale: 1.04 }} whileTap={{ scale: 0.97 }}>
               <Button asChild size="lg" variant="secondary">
-                <a href="#rsvp">{t("hero.ctaRsvp")}</a>
+                <a href={secondaryAction.href}>
+                  <SecondaryIcon />
+                  {secondaryAction.label}
+                </a>
               </Button>
             </motion.div>
           </motion.div>

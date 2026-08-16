@@ -12,11 +12,18 @@
     "close": "Close"
   },
   "hero": {
-    "kicker": "28 September 2024",
+    "kicker": "28 September 2026",
     "title": "Dorota & Marcin",
-    "subtitle": "Thank you for celebrating with us — the mass in Piwniczna-Zdrój, the party in Barcice.",
+    "subtitle": {
+      "before": "We will soon meet for mass in Piwniczna-Zdrój and celebrate together in Barcice.",
+      "today": "Today is the day — meet us in Piwniczna-Zdrój, then celebrate with us in Barcice.",
+      "after": "Thank you for celebrating with us — the mass in Piwniczna-Zdrój, the party in Barcice."
+    },
     "ctaGallery": "See photos",
-    "ctaRsvp": "Confirm attendance"
+    "ctaRsvp": "Confirm attendance",
+    "ctaEssentials": "Guest essentials",
+    "ctaSchedule": "See the schedule",
+    "ctaGuestBook": "Guest book"
   },
   "events": {
     "kicker": "Where and when",
@@ -28,17 +35,57 @@
     "address": "Address",
     "map": "Open map"
   },
+  "essentials": {
+    "kicker": "Keep it handy",
+    "title": "Guest essentials",
+    "subtitle": "Schedule, transport, maps and contacts — the key details in one place.",
+    "schedule": {
+      "title": "Day schedule",
+      "text": "Check the ceremony, reception and key moments of the evening.",
+      "action": "See schedule"
+    },
+    "bus": {
+      "title": "Guest shuttle",
+      "text": "Leaves the church at 15:45 and returns from the venue at 3:45.",
+      "action": "Check transport"
+    },
+    "maps": {
+      "title": "Maps and directions",
+      "text": "Navigate to the church in Piwniczna-Zdrój or the venue in Barcice.",
+      "ceremony": "Ceremony map",
+      "reception": "Reception map"
+    },
+    "contact": {
+      "title": "Quick contact",
+      "text": "A question on the wedding day? Find the couple and witnesses in the contact section.",
+      "action": "Open contacts"
+    },
+    "calendar": {
+      "title": "Save the date",
+      "text": "Add the full day — from gathering at the church until the end of the reception — to your calendar.",
+      "action": "Add to calendar"
+    }
+  },
   "countdown": {
     "kicker": "Countdown",
-    "title": "The wedding is behind us",
-    "daysAgo": "{{count}} days have passed since our wedding.",
-    "dateLabel": "28 September 2024"
+    "title": {
+      "before": "Until our wedding",
+      "today": "Today is the day!",
+      "after": "The wedding is behind us"
+    },
+    "message": {
+      "before": "{{count}} days until our wedding.",
+      "today": "See you at 14:00 in Piwniczna-Zdrój.",
+      "after": "{{count}} days have passed since our wedding."
+    },
+    "todayFigure": "Today",
+    "dateLabel": "28 September 2026"
   },
   "story": {
     "kicker": "Our story",
     "title": "How it started",
     "p1": "We met in the most ordinary way — a chat that was meant to last a minute and turned into a walk along the Poprad. Barcice and Piwniczna have been our shared landscape ever since.",
-    "p2": "The proposal was quiet: rings, a date on a watch, and the decision that 28 September 2024 would be our day. Thank you for celebrating it with us."
+    "p2": "The proposal was quiet: rings, a date on a watch, and the decision that 28 September 2026 would be our day. We are happy to share this story with you."
   },
   "slider": {
     "title": "Favourite moments",
@@ -47,7 +94,7 @@
   "schedule": {
     "kicker": "Schedule",
     "title": "The day at a glance",
-    "subtitle": "Sample times — this is how the day unfolded.",
+    "subtitle": "Sample times — this is how our day is planned.",
     "items": {
       "gather": { "time": "13:30", "title": "Gather at the church", "text": "Guests meet at the parish church in Piwniczna-Zdrój." },
       "mass": { "time": "14:00", "title": "Mass and sacrament", "text": "Wedding at the Church of the Nativity of the Blessed Virgin Mary." },

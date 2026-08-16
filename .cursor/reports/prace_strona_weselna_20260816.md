@@ -22,7 +22,7 @@ Adres docelowy: https://midnajt.github.io/example_weeding_site.github.io/
 | Temat | Ustalenie |
 | --- | --- |
 | Charakter | Hybryda: wygląda jak prawdziwa strona pary; logistyka (godziny, menu, stoły, telefony, świadkowie) jest **demo** pod prezentację klientom |
-| Data | 28 września 2024 (grawer na obrączkach) — uroczystość **za nami**; countdown liczy dni od ślubu |
+| Data | 28 września 2026 — hero i odliczanie automatycznie rozpoznają czas przed ślubem, dzień uroczystości i okres po weselu |
 | Ślub | Kościół pw. Narodzenia NMP, ul. Krakowska 6, 33-350 Piwniczna-Zdrój, godz. demo 14:00 |
 | Wesele | Rezydencja Las Vegas, Barcice 550, 33-342 Barcice, godz. demo 16:30 |
 | Paleta | Jedna, boho: tło `#F9F4EC`, CTA `#9E5A30`, akcent `#5E6551`; **bez** fuksji WZK `#9F1E6F` |
@@ -39,21 +39,22 @@ Adres docelowy: https://midnajt.github.io/example_weeding_site.github.io/
 
 1. Hero — `5F4A6221.jpg`, imiona, data, CTA zdjęcia + potwierdzenie obecności  
 2. Karty Ślub / Wesele + linki OSM  
-3. Countdown — „wesele za nami”  
-4. Historia — 3 kadry (kolejność: intymny → dłonie → uśmiech panny)  
-5. Slider — wyjście z kościoła, ceremonia, pierwszy taniec  
-6. Plan dnia (timeline)  
-7. Plan stołów (fikcyjne grupy)  
-8. Menu weselne (demo)  
-9. Logistyka (dojazd, dzieci, nocleg, dress code, bus)  
-10. Prezenty — „zamiast kwiatów”, **bez numeru konta**  
-11. Formularz potwierdzenia obecności (`#rsvp`)  
-12. Galeria — **wszystkie 10 JPG**, lightbox  
-13. Księga gości  
-14. FAQ  
-15. Świadkowie — Anna Kowalska / Tomasz Nowak, inicjały, bez portretów  
-16. Kontakt — dwie mapy OSM  
-17. Stopka AddPattern, `#/rodo`, `#/polityka`, banner cookies  
+3. Niezbędnik gościa — plan, bus, mapy, kontakt i pobranie wydarzenia `.ics`
+4. Countdown — treść zależna od dnia względem 28.09.2026
+5. Historia — 3 kadry (kolejność: intymny → dłonie → uśmiech panny)
+6. Slider — wyjście z kościoła, ceremonia, pierwszy taniec
+7. Plan dnia (timeline)
+8. Plan stołów (fikcyjne grupy)
+9. Menu weselne (demo)
+10. Logistyka (dojazd, dzieci, nocleg, dress code, bus)
+11. Prezenty — „zamiast kwiatów”, **bez numeru konta**
+12. Formularz potwierdzenia obecności (`#rsvp`)
+13. Galeria — **wszystkie 10 JPG**, lightbox
+14. Księga gości
+15. FAQ
+16. Świadkowie — Anna Kowalska / Tomasz Nowak, inicjały, bez portretów
+17. Kontakt — dwie mapy OSM
+18. Stopka AddPattern, `#/rodo`, `#/polityka`, banner cookies
 
 Kotwice hash bez React Router. Hero **nie** używa komponentu `Section` (osobna pełna wysokość).
 
@@ -147,3 +148,21 @@ Propozycja kolejności (do wyboru):
 - [ ] PL/EN działa, brak przełącznika ciemnego motywu  
 - [ ] `#/rodo` i cookies  
 - [ ] Stopka AddPattern  
+
+---
+
+## 10. Aktualizacja: data, niezbędnik i kalendarz
+
+- Data ślubu została ostatecznie ustawiona na **28 września 2026** w konfiguracji, treściach PL/EN oraz metadanych SEO.
+- Hero i odliczanie mają trzy automatyczne warianty: przed ślubem, w dniu ślubu i po weselu.
+- Pod kartami miejsc znajduje się „Niezbędnik gościa” z planem dnia, busem, dwiema mapami, kontaktem i pobieraniem jednego wydarzenia kalendarzowego.
+- Plik `.ics` obejmuje 28.09.2026 od 13:30 do 29.09.2026 do 04:00 w strefie `Europe/Warsaw`.
+- `npm run lint` i `npm run build` zakończyły się powodzeniem; build zgłasza jedynie istniejące ostrzeżenie o rozmiarze głównego chunka.
+
+---
+
+## 11. Aktualizacja belki motywów na mobile
+
+- Na ekranach poniżej breakpointu `sm` belka pokazuje napis „Zmień motyw” oraz ikony Boho, Las i Prestige.
+- Nazwy presetów pozostają widoczne od `sm`; etykiety `aria-label` zachowują dostępność przycisków mobilnych.
+- Mobilne ikony są wyśrodkowane, a desktopowy układ belki pozostaje bez zmian.

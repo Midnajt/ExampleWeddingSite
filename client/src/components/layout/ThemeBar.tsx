@@ -18,7 +18,7 @@ export function ThemeBar() {
   return (
     <div data-slot="theme-bar" className="bg-background/80 border-b backdrop-blur-md">
       <div
-        className="mx-auto flex h-10 max-w-6xl items-center gap-1.5 px-4 sm:gap-2 sm:px-6"
+        className="mx-auto flex h-10 max-w-6xl items-center justify-center gap-1.5 px-4 sm:justify-start sm:gap-2 sm:px-6"
         role="group"
         aria-label={t("theme.bar")}
       >
@@ -39,13 +39,13 @@ export function ThemeBar() {
               aria-pressed={active}
               aria-label={label}
               className={cn(
-                "h-7 gap-1.5 px-2 text-xs sm:px-3",
+                "h-7 w-7 gap-1.5 p-0 text-xs sm:w-auto sm:px-3",
                 !active && "text-foreground hover:bg-accent hover:text-accent-foreground",
               )}
               onClick={() => setPresetId(preset.id)}
             >
               <Icon className="size-3.5" />
-              <span>{label}</span>
+              <span className="hidden sm:inline">{label}</span>
             </Button>
           );
         })}

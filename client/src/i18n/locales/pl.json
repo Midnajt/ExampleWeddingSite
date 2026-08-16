@@ -12,11 +12,18 @@
     "close": "Zamknij"
   },
   "hero": {
-    "kicker": "28 września 2024",
+    "kicker": "28 września 2026",
     "title": "Dorota & Marcin",
-    "subtitle": "Dziękujemy, że byliście z nami — msza w Piwnicznej-Zdroju, wesele w Barcicach.",
+    "subtitle": {
+      "before": "Już wkrótce spotkamy się na mszy w Piwnicznej-Zdroju i weselu w Barcicach.",
+      "today": "To już dziś — czekamy na Was w Piwnicznej-Zdroju, a później świętujemy w Barcicach.",
+      "after": "Dziękujemy, że byliście z nami — msza w Piwnicznej-Zdroju, wesele w Barcicach."
+    },
     "ctaGallery": "Zobacz zdjęcia",
-    "ctaRsvp": "Potwierdź obecność"
+    "ctaRsvp": "Potwierdź obecność",
+    "ctaEssentials": "Niezbędnik gościa",
+    "ctaSchedule": "Zobacz plan dnia",
+    "ctaGuestBook": "Księga gości"
   },
   "events": {
     "kicker": "Gdzie i kiedy",
@@ -28,17 +35,57 @@
     "address": "Adres",
     "map": "Otwórz mapę"
   },
+  "essentials": {
+    "kicker": "Ważne pod ręką",
+    "title": "Niezbędnik gościa",
+    "subtitle": "Plan, transport, mapy i kontakt — najważniejsze informacje w jednym miejscu.",
+    "schedule": {
+      "title": "Plan dnia",
+      "text": "Sprawdź godziny ceremonii, przyjęcia i najważniejszych punktów wieczoru.",
+      "action": "Zobacz plan"
+    },
+    "bus": {
+      "title": "Bus dla gości",
+      "text": "Odjazd sprzed kościoła o 15:45, powrót z sali o 3:45.",
+      "action": "Sprawdź transport"
+    },
+    "maps": {
+      "title": "Mapy i dojazd",
+      "text": "Otwórz nawigację do kościoła w Piwnicznej-Zdroju lub sali w Barcicach.",
+      "ceremony": "Mapa ślubu",
+      "reception": "Mapa wesela"
+    },
+    "contact": {
+      "title": "Szybki kontakt",
+      "text": "Masz pytanie w dniu wesela? Dane pary i świadków są w sekcji kontaktowej.",
+      "action": "Przejdź do kontaktu"
+    },
+    "calendar": {
+      "title": "Zapisz termin",
+      "text": "Dodaj cały dzień — od zbiórki przed ślubem do zakończenia wesela — do swojego kalendarza.",
+      "action": "Dodaj do kalendarza"
+    }
+  },
   "countdown": {
     "kicker": "Odliczanie",
-    "title": "Wesele za nami",
-    "daysAgo": "Minęło {{count}} dni od naszego ślubu.",
-    "dateLabel": "28 września 2024"
+    "title": {
+      "before": "Do naszego ślubu",
+      "today": "To już dziś!",
+      "after": "Wesele za nami"
+    },
+    "message": {
+      "before": "Pozostało {{count}} dni do naszego ślubu.",
+      "today": "Widzimy się o 14:00 w Piwnicznej-Zdroju.",
+      "after": "Minęło {{count}} dni od naszego ślubu."
+    },
+    "todayFigure": "Dziś",
+    "dateLabel": "28 września 2026"
   },
   "story": {
     "kicker": "Nasza historia",
     "title": "Jak to się zaczęło",
     "p1": "Poznaliśmy się zwyczajnie — rozmowa, która miała trwać chwilę, a skończyła się spacerem wzdłuż Popradu. Od tamtej pory Barcice i Piwniczna są naszym wspólnym krajobrazem.",
-    "p2": "Zaręczyny przyszły bez wielkiej sceny: obrączki, data na zegarku i decyzja, że 28 września 2024 będzie naszym dniem. Dziękujemy, że świętowaliście go razem z nami."
+    "p2": "Zaręczyny przyszły bez wielkiej sceny: obrączki, data na zegarku i decyzja, że 28 września 2026 będzie naszym dniem. Cieszymy się, że możemy dzielić tę historię z Wami."
   },
   "slider": {
     "title": "Najlepsze wspólne chwile",
@@ -47,7 +94,7 @@
   "schedule": {
     "kicker": "Harmonogram",
     "title": "Plan dnia",
-    "subtitle": "Godziny poglądowe — tak wyglądał nasz dzień.",
+    "subtitle": "Godziny poglądowe — tak wygląda plan naszego dnia.",
     "items": {
       "gather": { "time": "13:30", "title": "Zbiórka przy kościele", "text": "Goście zbierają się przy kościele w Piwnicznej-Zdroju." },
       "mass": { "time": "14:00", "title": "Msza święta i sakrament", "text": "Ślub w kościele pw. Narodzenia NMP." },

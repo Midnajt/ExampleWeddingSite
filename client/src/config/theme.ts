@@ -177,3 +177,9 @@ export function densityClass(density: SectionDensity): string {
   if (density === "airy") return "py-24 md:py-32";
   return "py-16 md:py-24";
 }
+
+export function quickActionsGapClass(density: SectionDensity): string {
+  if (density === "compact") return "gap-3";
+  if (density === "airy") return "gap-5";
+  return "gap-4";
+}
