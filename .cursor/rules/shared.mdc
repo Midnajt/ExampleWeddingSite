@@ -20,4 +20,4 @@ Na stornie internetowej mają się znaleźć wszystkie kluczowe informacje dotyc
 Za każdym razem gdy skończysz pracę to poniżej pod 'Ostatnie zadania:' opisz w trzech zdaniach co było zrobione. Dzięki temu łatwiej jest mi wrócić do pracy.
 
 Ostatnie zadania:
-Link w stopce do AddPattern prowadzi teraz na https://addpattern.pl zamiast GitHub Pages. Nazwa studia w stopce pozostaje bez zmian. Linki sekcji „Polecamy” nadal wskazują na dotychczasowy adres demonstracyjny.
+Build na GitHub Actions padał, bo z repozytorium zniknęło zdjęcie hero `client/assets/5F4A6221.jpg`. Przywróciłem zoptymalizowaną kopię webową z historii Gita. Lokalny `npm run build` znów powinien przejść po dodaniu tego pliku do commita.
