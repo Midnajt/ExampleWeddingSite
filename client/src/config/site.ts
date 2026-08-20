@@ -87,7 +87,7 @@ export const site = {
   },
   addPattern: {
     name: "AddPattern Marcin Krzysztoszek",
-    url: addPatternUrl,
+    url: "https://addpattern.pl",
   },
   partners: [
     {
